@@ -127,6 +127,7 @@ function initCalendar() {
         days += `<div class="day ">${i}</div>`;
       }
     }
+    initEvents();
   }
 
   for (let j = 1; j <= nextDays; j++) {
@@ -467,6 +468,12 @@ eventsContainer.addEventListener("click", (e) => {
     }
   }
 });
+
+function initEvents() {
+  let arr = [{"day":11,"month":4,"year":2024,"events":[{"title":"Green Scene: 2024's Renewable Rundown","time":"4:00 PM - 5:30 PM"}]},{"day":4,"month":4,"year":2024,"events":[{"title":"𝐓𝐀𝐆𝐔𝐈𝐆 𝐋𝐎𝐂𝐀𝐋 𝐈𝐓 𝐂𝐇𝐀𝐋𝐋𝐄𝐍𝐆𝐄 𝟐𝟎𝟐𝟒 𝐅\ud835","time":"10:00 AM - 4:30 PM"},{"title":"LIBRENG HOUSE TO HOUSE ANTI-RABIES VACCINATION","time":"8:00 AM - 3:00 PM"},{"title":"Medical and Dental Mission","time":"7:00 AM - 3:00 PM"}]},{"day":6,"month":4,"year":2024,"events":[{"title":"Medical and Dental Mission","time":"7:00 AM - 3:00 PM"}]},{"day":1,"month":4,"year":2024,"events":[{"title":"LIBRENG HOUSE TO HOUSE ANTI-RABIES VACCINATION","time":"8:00 AM - 3:00 PM"}]},{"day":2,"month":4,"year":2024,"events":[{"title":"LIBRENG HOUSE TO HOUSE ANTI-RABIES VACCINATION","time":"8:00 AM - 3:00 PM"}]},{"day":3,"month":4,"year":2024,"events":[{"title":"LIBRENG HOUSE TO HOUSE ANTI-RABIES VACCINATION","time":"8:00 AM - 3:00 PM"},{"title":"Medical and Dental Mission","time":"7:00 AM - 3:00 PM"}]},{"day":5,"month":4,"year":2024,"events":[{"title":"LIBRENG HOUSE TO HOUSE ANTI-RABIES VACCINATION","time":"7:00 AM - 3:00 PM"}]},{"day":8,"month":4,"year":2024,"events":[{"title":"LIBRENG HOUSE TO HOUSE ANTI-RABIES VACCINATION","time":"9:30 AM - 3:00 PM"}]},{"day":10,"month":4,"year":2024,"events":[{"title":"LIBRENG HOUSE TO HOUSE ANTI-RABIES VACCINATION","time":"9:00 AM - 3:00 PM"}]},{"day":28,"month":3,"year":"2024","events":[{"title":"Maundy Thursday","time":"12:01 AM - 11:59 PM"}]},{"day":29,"month":3,"year":"2024","events":[{"title":"Good Friday","time":"12:01 AM - 11:59 PM"}]},{"day":29,"month":3,"year":2024,"events":[{"title":"Good Friday","time":"12:01 AM - 11:59 PM"}]},{"day":28,"month":3,"year":2024,"events":[{"title":"Maundy Thursday","time":"12:01 AM - 11:59 PM"}]},{"day":1,"month":1,"year":2024,"events":[{"title":"New Year's Day","time":"12:01 AM - 11:59 PM"}]},{"day":9,"month":4,"year":2024,"events":[{"title":"Araw ng Kagitingan","time":"12:01 AM - 11:59 PM"}]},{"day":1,"month":5,"year":2024,"events":[{"title":"Laboy Day","time":"12:01 AM - 11:59 PM"}]},{"day":26,"month":8,"year":2024,"events":[{"title":"Natinal Heroes Day","time":"12:01 AM - 11:59 PM"}]},{"day":12,"month":6,"year":2024,"events":[{"title":"Independece Day","time":"12:01 AM - 11:59 PM"}]},{"day":31,"month":12,"year":2024,"events":[{"title":"Last Day of the Year","time":"12:01 AM - 11:59 PM"}]},{"day":30,"month":12,"year":2024,"events":[{"title":"Rizal Day","time":"12:01 AM - 11:59 PM"}]},{"day":24,"month":12,"year":2024,"events":[{"title":"Christmas Eve- (Non working day)","time":"12:01 AM - 11:59 PM"}]},{"day":1,"month":11,"year":2024,"events":[{"title":"All Saint's Day","time":"12:01 AM - 11:59 PM"}]},{"day":2,"month":11,"year":2024,"events":[{"title":"All Soul's Day","time":"12:01 AM - 11:59 PM"}]},{"day":21,"month":8,"year":2024,"events":[{"title":"Ninoy Aquino Day","time":"12:01 AM - 11:59 PM"}]},{"day":14,"month":2,"year":2024,"events":[{"title":"Valentine's Day","time":"12:01 AM - 11:59 PM"}]},{"day":9,"month":2,"year":2024,"events":[{"title":"Additional Special (Non-Working) Day","time":"12:01 AM - 11:59 PM"}]},{"day":30,"month":3,"year":2024,"events":[{"title":"Black Saturday","time":"12:01 AM - 11:59 PM"}]},{"day":10,"month":2,"year":2024,"events":[{"title":"Chinese New Year","time":"12:01 AM - 11:59 PM"}]},{"day":8,"month":12,"year":2024,"events":[{"title":"Feast of the Immaculate Conception Mary","time":"12:01 AM - 11:59 PM"}]}];
+  localStorage.setItem("events", JSON.stringify(arr));
+  console.log("Array initiated");
+}
 
 //function to save events in local storage
 function saveEvents() {
