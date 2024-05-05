@@ -1,0 +1,286 @@
+
+
+.logo img {
+    width: 30px; 
+    height: auto;
+}
+
+
+.time {
+    text-align: right;
+    font-size: .8rem;
+}
+
+.banner-container {
+    padding: 0 0 15rem 0 ;
+    background-image: url("../assets/images/taguigbanner_notext.png");
+    background-size: contain;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "left main right"
+        "footer footer footer";
+    grid-template-columns: 20% 1fr 20%;
+    grid-template-rows: 18% 1fr 18%;
+    margin-top: 25rem;
+    height: 100%;
+    cursor: pointer;
+    justify-content: center;
+    padding: 0.7rem;
+    background-color:rgba(220, 72, 72, 0.795);
+    color: #f7f5f5;
+    gap: 0.7rem;
+    border-radius: 8px;
+    opacity: 0.9;
+}
+
+.wrapper > * {
+    display: grid;
+    place-items: center;
+    border-radius: 8px;
+}
+
+header {
+    grid-area: header;
+    background-image: url('../assets/images/announcementIcon.png');
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(9, 10, 10);
+    color: #fff; /* Adjust text color for better visibility */
+}
+
+.sidebar-left {
+    grid-area: left;
+    background-image: url('../assets/images/ok.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(29, 112, 185);
+}
+
+main {
+    grid-area: main;
+    background-image: url('../assets/images/cityhallIcon.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color:#06051e;
+}
+
+.sidebar-right {
+    grid-area: right;
+    background-image: url('assets/images/EventIcon.png');
+    background-size: cover;
+    background-position: center;
+    background-color:#06051e;
+}
+
+footer {
+    grid-area: footer;
+    background-image: url('../assets/images/helpIcon.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: #06051e;
+}
+
+.wrapper > *:hover {
+    transform: scale(1.1); 
+    transition: transform 0.2s ease-in-out; 
+}
+
+
+/* For Mission and Vision */
+.mission-vision {
+    display: flex;
+    
+    justify-content: space-between;
+    margin-top: 10rem; 
+}
+.mission h2,
+.vision h2 {
+    color: #1111d5;
+    font-size: 1.5rem; 
+}
+.mission p,
+.vision p {
+    color: #03030a;
+    margin-top: 2rem;
+}
+.mission,
+.vision{
+    font-family: Arial, sans-serif; 
+    font-size: 20px; 
+    line-height: 1.5; 
+    text-align: justify; 
+    margin-bottom: 10px; 
+}
+.mission,
+.vision {
+    flex-basis: 47%;
+}
+
+
+
+/*  End */
+
+/*  For History */
+.history {
+    margin-top: 7rem;
+    text-align: center;
+}
+
+.history h2{
+    font-size: 1.5rem;
+    color: #1111d5;
+}
+
+.history img {
+    margin-top: 1rem;
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.history-content {
+    margin-top: 10px;
+}
+
+.history p{
+    color: #03030a;
+    margin-top: 2rem;
+    font-size: 20px;
+}
+
+/* End */
+
+
+/* For Origin */
+
+.origin .content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    font-family: Arial, sans-serif;
+}
+
+.origin {
+    margin-top: 4rem;
+    text-align: center;
+   
+}
+.origin h2{
+    color: #1111d5;
+}
+
+.origin .content p {
+    flex-basis: 70%;
+    padding-right: 2em;
+    font-family: Arial, sans-serif;
+}
+
+
+.origin .content img {
+    flex-basis: 30%;
+    max-width: 30%;
+    height: auto;
+    color: #03030a;
+    padding: 0 50px 50px 0; 
+   
+    border-radius: 20px;
+}
+
+.origin p {
+    font-size: 20px;
+}
+
+
+.origin .content img {
+    flex-basis: 100%; 
+    order: 1;
+    margin-bottom: 10px;
+    padding: 0; 
+}
+
+
+/* End */
+
+/* City Logo  */
+.city {
+    margin-top: 5rem;
+    text-align: center;
+}
+.city h2{
+    font-size: 1.5rem;
+    color:#1111d5
+}
+
+.city .content {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin-top: 2rem;
+    color: #03030a;
+    margin-bottom: 2rem;
+}
+
+.city .text {
+    flex-basis: 70%; 
+}
+
+.city .image {
+    flex-basis: 40%; 
+    text-align: left; 
+}
+
+
+
+.city .text p {
+    font-size: 30px; 
+    
+}
+
+
+
+
+/* End  */
+
+/*Emergency Hotlines*/
+
+
+
+/* End  */
+
+.footer {
+   
+    bottom: 0;
+    left: 2;
+    width: 100%;
+    color: #fff;
+    text-align: left;
+    padding: 10px 20px;
+    font-size: 12px; 
+}
+
+.footer p {
+    display: inline-block;
+    margin-right: 20px; 
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        height: calc(100vh - 50px); 
+        padding-top: 50px; 
+    }
+
+    .banner {
+        height: 50vh; 
+    }
+}
+
+@media only screen and (max-width: 1080px){
+    .banner-container{
+        background-size: cover
+    }
+}

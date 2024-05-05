@@ -1,0 +1,2048 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taguig Information Kiosk</title>
+    <link rel="shortcut icon" href="../../assets/images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../sass/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/4226f23083.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../../../assets/js/grid.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        a,
+        button {
+            text-decoration: none;
+        }
+
+        h2 button {
+            font-size: 2rem !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar bg-primary navbar-expand-lg ">
+        <button onclick="history.back()" class="justify-content-start bg-primary border-0 px-5 text-white">
+            <i class="fa-solid fa-chevron-left fa-3x"></i>
+        </button>
+        <button onclick="history.forward()" class="justify-content-start bg-primary border-0 px-5 text-white">
+            <i class="fa-solid fa-chevron-right fa-3x"></i>
+        </button>
+        <div class="container-fluid text-white justify-content-between">
+
+            <a href="../../index.html" class="navbar-brand text-reset py-3 justify-content-start">
+                <div class="row">
+                    <div class="col-auto">
+                        <img src="../../assets/images/logo.png" alt="Logo" class="d-inline-block align-text-top w-25">
+                    </div>
+                </div>
+            </a>
+
+            <div class="col-xl-auto row time justify-content-end fs-2">
+                <span id="real-time" class="text-end"></span>
+                <span id="real-date" class="text-end"></span>
+            </div>
+        </div>
+        <div class="dropstart px-3">
+            <a class="btn btn-primary" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-bars fa-3x"></i>
+            </a>
+
+            <ul class="dropdown-menu fs-4 bg-accent p-0 text-primary">
+                <li><a class="dropdown-item py-3 text-reset fw-bold" href="../../index.html">
+                    <i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a class="dropdown-item py-3 text-reset fw-bold" href="../announcement/announcement.html"><i
+                            class="fa-solid fa-bullhorn"></i> Annoucements</a></li>
+                <li><a class="dropdown-item py-3 text-reset fw-bold" href="../event/event.html"><i
+                            class="fa-solid fa-calendar-days"></i> Events</a></li>
+                <li><a class="dropdown-item py-3 text-reset fw-bold" href="help-page.html"><i
+                            class="fa-solid fa-circle-question"></i> Help Desk</a></li>
+                <li><a class="dropdown-item py-3 text-reset fw-bold" href="../job/jobfair.html"><i
+                            class="fa-solid fa-briefcase"></i> Job Fair</a></li>
+            </ul>
+        </div>
+    </div>
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="px-3 py-1 fs-3 fw-medium bg-altlight">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Announcement</li>
+        </ol>
+    </nav>
+    <section class="banner-container">
+        <div class="container-lg ">
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-md-start">
+                    <h1 class="text-secondary">
+                        <div class="display-1 text-center p-3 fw-bold">News and Announcements</div>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- January -->
+
+    <div class="modal " id="janpost1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F775407814625591&show_text=true&width=500" width="500" height="812" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+    
+    <div class="modal " id="janpost2">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F793768742789498&show_text=true&width=500" width="500" height="709" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>        </div>
+    </div>
+
+    <div class="modal fade" id="janpost3">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F776717914494581&show_text=true&width=500" width="500" height="793" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>    </div>
+    </div>
+
+
+    <div class="modal fade" id="janpost4">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F776798147819891&show_text=true&width=500" width="500" height="737" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>  </div>
+        </div>
+    
+        <div class="modal fade" id="janpost5">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F777022401130799&show_text=true&width=500" width="500" height="812" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>            </div>
+            </div>
+
+            <div class="modal fade" id="janpost6">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                   <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F777348801098159&show_text=true&width=500" width="500" height="787" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+                </div>
+
+                <div class="modal fade" id="janpost7">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F777958791037160&show_text=true&width=500" width="500" height="654" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe> </div>
+    </div>
+
+    <div class="modal fade" id="janpost8">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F777994261033613&show_text=true&width=500" width="500" height="699" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+</div>
+
+
+<div class="modal fade" id="janpost9">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F777995367700169&show_text=true&width=500" width="500" height="674" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+</div>
+
+
+
+<div class="modal fade" id="janpost10">
+<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F778503590982680&show_text=true&width=500" width="500" height="738" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+</div>
+
+<div class="modal fade" id="janpost11">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F778676734298699&show_text=true&width=500" width="500" height="729" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+    </div>
+
+
+    <div class="modal fade" id="janpost12">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F779019400931099&show_text=true&width=500" width="500" height="793" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+        </div>
+
+        <div class="modal fade" id="janpost13">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F779631367536569&show_text=true&width=500" width="500" height="736" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+            </div>
+
+            <div class="modal fade" id="janpost14">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F779677107531995&show_text=true&width=500" width="500" height="767" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+                </div>
+
+
+                <div class="modal fade" id="janpost15">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F780860697413636&show_text=true&width=500" width="500" height="829" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+                </div>
+
+
+                <div class="modal fade" id="janpost16">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F781408140692225&show_text=true&width=500" width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+                    </div>
+
+                    <div class="modal fade" id="janpost17">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F781572644009108&show_text=true&width=500" width="500" height="737" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+                        </div>
+
+                        <div class="modal fade" id="janpost18">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F781588074007565&show_text=true&width=500" width="500" height="654" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+                            </div>
+
+                            <div class="modal fade" id="janpost19">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F781690173997355&show_text=true&width=500" width="500" height="460" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+                                </div>
+
+                                <div class="modal fade" id="janpost20">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F782838607215845&show_text=true&width=500" width="500" height="812" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+                                    </div>
+                                    
+
+
+                                    <div class="modal fade" id="janpost21">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F784958297003876&show_text=true&width=500" width="500" height="460" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+                                        </div>
+
+                                        <div class="modal fade" id="janpost22">
+                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F785163823649990&show_text=true&width=500" width="500" height="718" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+                                            </div>
+                                            
+
+                                            <div class="modal fade" id="janpost23">
+                                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F786302646869441&show_text=true&width=500" width="500" height="731" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+                                                </div>
+
+                                                <div class="modal fade" id="janpost24">
+                                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F786471493519223&show_text=true&width=500" width="500" height="812" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+                                                    </div>
+
+                                                    <div class="modal fade" id="janpost25">
+                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F787424023423970&show_text=true&width=500" width="500" height="793" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+                                                        </div>
+
+                                                        <div class="modal fade" id="janpost26">
+                                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F788307540002285&show_text=true&width=500" width="500" height="679" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+                                                            </div>
+
+
+                                                            <div class="modal fade" id="janpost27">
+                                                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F790078999825139&show_text=true&width=500" width="500" height="793" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+                                                                </div>
+
+
+                                                                <div class="modal fade" id="janpost28">
+                                                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F790113079821731&show_text=true&width=500" width="500" height="680" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+                                                                    </div>
+
+                                                                    <div class="modal fade" id="janpost29">
+                                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F790635949769444&show_text=true&width=500" width="500" height="460" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+                                                                        </div>
+
+
+                                                                        <div class="modal fade" id="janpost30">
+                                                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F790732509759788&show_text=true&width=500" width="500" height="673" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+                                                                            </div>
+
+                                                                            <div class="modal fade" id="janpost31">
+                                                                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F790771996422506&show_text=true&width=500" width="500" height="635" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+                                                                                </div>
+
+                                                                                <div class="modal fade" id="janpost32">
+                                                                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F790868826412823&show_text=true&width=500" width="500" height="673" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+                                                                                    </div>
+
+                                                                                    <div class="modal fade" id="janpost33">
+                                                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F790918953074477&show_text=true&width=500" width="500" height="673" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+                                                                                        </div>
+
+
+                                                                                        <div class="modal fade" id="janpost34">
+                                                                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F793768742789498&show_text=true&width=500" width="500" height="709" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+                                                                                            </div>
+
+    <!-- Febuary -->
+    <div class="modal fade" id="febpost1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F794275169405522&show_text=true&width=500" width="500" height="754" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="febpost2">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F794936646006041&show_text=true&width=500" width="500" height="812" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+
+    <div class="modal fade" id="febpost3">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F795657985933907&show_text=true&width=500" width="500" height="767" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+
+    <div class="modal fade" id="febpost4">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F796791445820561&show_text=true&width=500" width="500" height="767" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+    
+
+    <div class="modal fade" id="febpost5">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F795697529263286&show_text=true&width=500" width="500" height="480" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="febpost6">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F796907439142295&show_text=true&width=500" width="500" height="793" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="febpost7">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F796965159136523&show_text=true&width=500" width="500" height="729" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="febpost8">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F798058842360488&show_text=true&width=500" width="500" height="654" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="febpost9">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F798171139015925&show_text=true&width=500" width="500" height="718" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+
+    <div class="modal fade" id="febpost10">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F798633762302996&show_text=true&width=500" width="500" height="751" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="febpost11">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F799328258900213&show_text=true&width=500" width="500" height="679" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="febpost12">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F799875065512199&show_text=true&width=500" width="500" height="659" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+
+    <div class="modal fade" id="febpost13">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F800006265499079&show_text=true&width=500" width="500" height="767" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+
+    <div class="modal fade" id="febpost14">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F800273665472339&show_text=true&width=500" width="500" height="773" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+
+    <div class="modal fade" id="febpost15">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F800904632075909&show_text=true&width=500" width="500" height="839" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+
+    <div class="modal fade" id="febpost16">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F801220002044372&show_text=true&width=500" width="500" height="680" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+
+    <div class="modal fade" id="febpost17">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F801323928700646&show_text=true&width=500" width="500" height="737" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+
+        
+    <div class="modal fade" id="febpost18">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F802124391953933&show_text=true&width=500" width="500" height="767" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="febpost19">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F802521158580923&show_text=true&width=500" width="500" height="812" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+
+    <div class="modal fade" id="febpost20">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F802546725245033&show_text=true&width=500" width="500" height="806" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+
+    <div class="modal fade" id="febpost21">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F803197278513311&show_text=true&width=500" width="500" height="654" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="febpost22">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F803932711773101&show_text=true&width=500" width="500" height="729" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="febpost23">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F804468715052834&show_text=true&width=500" width="500" height="767" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+
+    <div class="modal fade" id="febpost24">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F804607305038975&show_text=true&width=500" width="500" height="652" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+
+    <div class="modal fade" id="febpost25">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F804994628333576&show_text=true&width=500" width="500" height="718" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="febpost26">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F805078528325186&show_text=true&width=500" width="500" height="754" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+
+    <div class="modal fade" id="febpost27">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F806176374882068&show_text=true&width=500" width="500" height="767" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="febpost28">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F806209891545383&show_text=true&width=500" width="500" height="641" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="febpost29">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F806285384871167&show_text=true&width=500" width="500" height="773" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="febpost30">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F806726461493726&show_text=true&width=500" width="500" height="793" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+</div>
+</div>
+
+
+<div class="modal fade" id="febpost31">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F807911658041873&show_text=true&width=500" width="500" height="466" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+</div>
+
+
+
+
+        <div class="modal fade" id="febpost32">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F808352524664453&show_text=true&width=500" width="500" height="787" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>  
+      </div>
+    </div>
+
+    <div class="modal fade" id="febpost33">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F808470974652608&show_text=true&width=500" width="500" height="767" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="febpost34">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F808945241271848&show_text=true&width=500" width="500" height="793" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>        </div>
+    </div>
+    </div>
+
+    <div class="modal fade" id="febpost35">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F809568801209492&show_text=true&width=500" width="500" height="787" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>    </div>
+    </div>
+
+    <div class="modal fade" id="febpost36">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F810101037822935&show_text=true&width=500" width="500" height="641" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>    
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="febpost37">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F810107024489003&show_text=true&width=500" width="500" height="729" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>        </div>
+    </div>  
+</div>
+
+
+<div class="modal fade" id="febpost38">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F810591324440573&show_text=true&width=500" width="500" height="767" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>  
+</div>
+
+
+<div class="modal fade" id="febpost39">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F810696494430056&show_text=true&width=500" width="500" height="729" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+    </div>
+
+    <div class="modal fade" id="febpost40">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F811023507730688&show_text=true&width=500" width="500" height="718" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>        </div>
+        </div>
+
+        <div class="modal fade" id="febpost41">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F811214157711623&show_text=true&width=500" width="500" height="738" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>            </div>
+            </div>
+
+
+
+    <!-- March -->
+    <div class="modal fade" id="marpost1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe
+                src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F811595151006857&show_text=true&width=500"
+                width="500" height="698" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+
+    <div class="modal fade" id="marpost2">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F811630347670004&show_text=true&width=500" width="500" height="654" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+
+    <div class="modal fade" id="marpost3">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F811896944310011&show_text=true&width=500" width="500" height="729" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>        </div>
+    </div>
+
+
+    <div class="modal fade" id="marpost4">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F815103390656033&show_text=true&width=500" width="500" height="793" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>    </div>
+        </div>
+
+        <div class="modal fade" id="marpost5">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F812303444269361&show_text=true&width=500" width="500" height="812" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>            </div>
+            </div>
+
+
+            <div class="modal fade" id="marpost6">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F812321804267525&show_text=true&width=500" width="500" height="812" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                </div>
+                </div>
+
+                <div class="modal fade" id="marpost7">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F815047093994996&show_text=true&width=500" width="500" height="767" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                    </div>
+                    </div>
+
+                    <div class="modal fade" id="marpost8">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F812734174226288&show_text=true&width=500" width="500" height="710" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                        </div>
+                        </div>
+
+                        <div class="modal fade" id="marpost9">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F813709794128726&show_text=true&width=500" width="500" height="538" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                            </div>
+                            </div>
+
+                            <div class="modal fade" id="marpost10">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F813966817436357&show_text=true&width=500" width="500" height="480" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                </div>
+                                 </div>
+
+                                 <div class="modal fade" id="marpost11">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F813988437434195&show_text=true&width=500" width="500" height="480" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                    </div>
+                                    </div>
+
+
+                                    <div class="modal fade" id="marpost12">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F814291620737210&show_text=true&width=500" width="500" height="641" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                        </div>
+                                        </div>
+
+                                        <div class="modal fade" id="marpost13">
+                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F814027670763605&show_text=true&width=500" width="500" height="793" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                            </div>
+                                            </div>
+
+                                            <div class="modal fade" id="marpost14">
+                                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F814504400715932&show_text=true&width=500" width="500" height="754" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                </div>
+                                                </div>
+
+                                                <div class="modal fade" id="marpost15">
+                                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F815762483923457&show_text=true&width=500" width="500" height="812" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                    </div>
+                                                    </div>
+
+                                                    <div class="modal fade" id="marpost16">
+                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F816409883858717&show_text=true&width=500" width="500" height="735" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                        </div>
+                                                        </div>
+
+                                                        <div class="modal fade" id="marpost17">
+                                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F816510183848687&show_text=true&width=500" width="500" height="657" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                            </div>
+                                                            </div>
+
+
+                                                            <div class="modal fade" id="marpost18">
+                                                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F816859607147078&show_text=true&width=500" width="500" height="767" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                                </div>
+                                                                </div>
+
+                                                                <div class="modal fade" id="marpost19">
+                                                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F817129783786727&show_text=true&width=500" width="500" height="773" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                                    </div>
+                                                                    </div>
+
+                                                                    <div class="modal fade" id="marpost20">
+                                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F817985777034461&show_text=true&width=500" width="500" height="735" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                                        </div>
+                                                                        </div>
+
+
+                                                                        <div class="modal fade" id="marpost21">
+                                                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F818044833695222&show_text=true&width=500" width="500" height="812" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                                            </div>
+                                                                            </div>
+
+
+                                                                            <div class="modal fade" id="marpost22">
+                                                                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F818115750354797&show_text=true&width=500" width="500" height="641" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                                                </div>
+                                                                                </div>
+
+                                                                                <div class="modal fade" id="marpost23">
+                                                                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F818185963681109&show_text=true&width=500" width="500" height="654" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                                                    </div>
+                                                                                    </div>
+
+                                                                                    <div class="modal fade" id="marpost24">
+                                                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F819099713589734&show_text=true&width=500" width="500" height="737" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                                                        </div>
+                                                                                        </div>
+
+
+                                                                                        <div class="modal fade" id="marpost25">
+                                                                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F819376520228720&show_text=true&width=500" width="500" height="812" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                                                            </div>
+                                                                                            </div>
+
+
+                                                                                            <div class="modal fade" id="marpost26">
+                                                                                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F820309920135380&show_text=true&width=500" width="500" height="793" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                                                                </div>
+                                                                                                </div>
+
+
+                                                                                                <div class="modal fade" id="marpost27">
+                                                                                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F821621626670876&show_text=true&width=500" width="500" height="812" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                                                                    </div>
+                                                                                                    </div>
+
+                                                                                                    <div class="modal fade" id="marpost28">
+                                                                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F821616446671394&show_text=true&width=500" width="500" height="767" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                                                                        </div>
+                                                                                                        </div>
+
+
+                                                                                                        <div class="modal fade" id="marpost29">
+                                                                                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                                                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F821469030019469&show_text=true&width=500" width="500" height="735" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                                                                            </div>
+                                                                                                            </div>
+
+
+
+                                                                                                            <div class="modal fade" id="marpost30">
+                                                                                                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                                                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F821498436683195&show_text=true&width=500" width="500" height="729" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                                                                                </div>
+                                                                                                                </div>
+
+
+                                                                                                                <div class="modal fade" id="marpost31">
+                                                                                                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                                                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F822290589937313&show_text=true&width=500" width="500" height="641" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                                                                                    </div>
+                                                                                                                    </div>
+                                                                                                                    
+                                                                                                                    <div class="modal fade" id="marpost32">
+                                                                                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                                                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F822162603283445&show_text=true&width=500" width="500" height="767" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                                                                                        </div>
+                                                                                                                        </div>
+
+                                                                                                                        <div class="modal fade" id="marpost33">
+                                                                                                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                                                                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F822198539946518&show_text=true&width=500" width="500" height="793" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                                                                                            </div>
+                                                                                                                            </div>
+
+
+                                                                                                                            <div class="modal fade" id="marpost34">
+                                                                                                                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                                                                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F822659173233788&show_text=true&width=500" width="500" height="748" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                                                                                                </div>
+                                                                                                                                </div>
+
+                                                                                                                                <div class="modal fade" id="marpost35">
+                                                                                                                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                                                                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F822880643211641&show_text=true&width=500" width="500" height="812" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                                                                                                    </div>
+                                                                                                                                    </div>
+
+
+                                                                                                                                    <div class="modal fade" id="marpost36">
+                                                                                                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                                                                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F823411716491867&show_text=true&width=500" width="500" height="699" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                                                                                                        </div>
+                                                                                                                                        </div>
+
+
+                                                                                                                                        <div class="modal fade" id="marpost37">
+                                                                                                                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                                                                                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F823827966450242&show_text=true&width=500" width="500" height="654" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                                                                                                            </div>
+                                                                                                                                            </div>
+                                                                                                                                            
+
+                                                                                                                                            <div class="modal fade" id="marpost38">
+                                                                                                                                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                                                                                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F825096916323347&show_text=true&width=500" width="500" height="767" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                                                                                                                </div>
+                                                                                                                                                </div>
+
+                                                                                                                                                <div class="modal fade" id="marpost39">
+                                                                                                                                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                                                                                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F825158412983864&show_text=true&width=500" width="500" height="793" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                                                                                                                    </div>
+                                                                                                                                                    </div>
+
+
+                                                                                                                                                    <div class="modal fade" id="marpost40">
+                                                                                                                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                                                                                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F825187166314322&show_text=true&width=500" width="500" height="679" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                                                                                                                                                        </div>
+                                                                                                                                                    </div>
+
+
+                                                                                                                                                    <div class="modal fade" id="marpost41">
+                                                                                                                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                                                                                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D820155083489245%26id%3D100064842814591&show_text=true&width=500" width="500" height="735" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                   </div>
+                                                                                                                                                    </div>
+
+                                                                                                                                                    <div class="modal fade" id="marpost42">
+                                                                                                                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                                                                                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F826632126169826&show_text=true&width=500" width="500" height="641" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                                                                                                                    </div>
+                                                                                                                                                        </div>
+
+                                                                                                                                                        <div class="modal fade" id="marpost43">
+                                                                                                                                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                                                                                                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F827064789459893&show_text=true&width=500" width="500" height="679" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                                                                                                                            </div>
+                                                                                                                                                            </div>
+
+                                                             <!--  April -->
+
+                                                             <div class="modal fade" id="aprpost1">
+                                                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F830255582474147&show_text=true&width=500" width="500" height="699" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                                </div>
+                                                                </div>
+
+                                                                <div class="modal fade" id="aprpost2">
+                                                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F830947102404995&show_text=true&width=500" width="500" height="641" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                                    </div>
+                                                                    </div>
+
+                                                                    <div class="modal fade" id="aprpost3">
+                                                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F832683088898063&show_text=true&width=500" width="500" height="654" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                                    </div>
+                                                                    </div>
+
+
+                                                                    <div class="modal fade" id="aprpost4">
+                                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F834053655427673&show_text=true&width=500" width="500" height="757" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                                        </div>
+                                                                        </div>
+
+
+                                                                        <div class="modal fade" id="aprpost5">
+                                                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F834686302031075&show_text=true&width=500&is_preview=true" width="500" height="699" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="modal fade" id="aprpost6">
+                                                                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F834686302031075&show_text=true&width=500&is_preview=true" width="500" height="699" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                                                                                            </div>
+                                                                                        </div>
+
+
+                                                                                        <div class="modal fade" id="aprpost7">
+                                                                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F836843851815320&show_text=true&width=500&is_preview=true" width="500" height="654" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                                <div class="modal fade" id="aprpost8">
+                                                                                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F836843851815320&show_text=true&width=500&is_preview=true" width="500" height="654" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                                                                    </div>
+                                                                                                        </div>
+
+
+                                                                                                        <div class="modal fade" id="aprpost9">
+                                                                                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                                                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F839345011565204&show_text=true&width=500&is_preview=true" width="500" height="718" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                                                                      
+                                                                                                                      </div>
+                                                                                                                    </div>
+
+                                                                                                                    <div class="modal fade" id="aprpost10">
+                                                                                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                                                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaguigcity%2Fposts%2F839516421548063&show_text=true&width=500&is_preview=true" width="500" height="641" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                                                                                                  </div>
+                                                                                                                                </div>
+                                                                                                
+                                                                                                                                <div class="modal fade" id="aprpost11">
+                                                                                                                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                                                                                                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D839976558168716%26set%3Da.596358815863826%26type%3D3&show_text=true&width=500&is_preview=true" width="500" height="710" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                                                                                                                                     </div>
+                                                                                                                                            </div>
+
+
+    <!-- Main Content -->   
+    <div class="container my-5 p-3 bg-secondary fs-3">
+
+        <!--  January -->
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link text-decoration-none dropdown-toggle" type="button"
+                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            January
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseOne" class="row p-5 gap-3 collapse justify-content-around" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                        data-bs-target="#janpost1">
+                        <img class="card-img-top" src="Jan/Janpost1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐂𝐈𝐓𝐘 𝐖𝐄𝐋𝐂𝐎𝐌𝐄𝐒 𝟐𝟎𝟐𝟒 𝐖𝐈𝐓𝐇 𝐁𝐈𝐆𝐆𝐄𝐒𝐓 𝐍𝐄𝐖 𝐘𝐄𝐀𝐑’𝐒 𝐄𝐕𝐄 𝐂𝐎𝐔𝐍𝐓𝐃𝐎𝐖𝐍 𝐘𝐄𝐓</p>
+                        </div>
+                    </a>
+                    
+
+                    <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                        data-bs-target="#janpost2">
+                        <img class="card-img-top" src="Jan/Janpost2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">𝐀𝐍𝐔𝐍𝐒𝐘𝐎 𝐔𝐊𝐎𝐋 𝐒𝐀 𝐄𝐌𝐁𝐎 𝐇𝐄𝐀𝐋𝐓𝐇 𝐂𝐄𝐍𝐓𝐄𝐑𝐒 𝐀𝐓 𝐓𝐄𝐋𝐄𝐌𝐄𝐃𝐈𝐂𝐈𝐍𝐄 𝐇𝐎𝐓𝐋𝐈𝐍𝐄𝐒</p>
+                        </div>
+                    </a>
+                    
+                    <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                        data-bs-target="#janpost3">
+                        <img class="card-img-top" src="Jan/Janpost3.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">𝐁𝐮𝐡𝐚𝐲 𝐚𝐭 𝐊𝐚𝐥𝐮𝐬𝐮𝐠𝐚𝐧 𝐇𝐮𝐰𝐚𝐠 𝐏𝐚𝐠𝐥𝐚𝐫𝐮𝐚𝐧</p>
+                        </div>
+                    </a>
+                    
+                    <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                        data-bs-target="#janpost4">
+                        <img class="card-img-top" src="Jan/Janpost4.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">𝗔𝗡𝗨𝗡𝗦𝗬𝗢 𝗨𝗞𝗢𝗟 𝗦𝗔 𝗗𝗜𝗔𝗟𝗬𝗦𝗜𝗦 𝗦𝗘𝗥𝗩𝗜𝗖𝗘𝗦 𝗣𝗔𝗥𝗔 𝗦𝗔 𝗠𝗚𝗔 𝗥𝗘𝗦𝗜𝗗𝗘𝗡𝗧𝗘 𝗡𝗚 𝗘𝗠𝗕𝗢 𝗕𝗔𝗥𝗔𝗡𝗚𝗔𝗬𝗦</p>
+                        </div>
+                    </a>
+
+                    <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                        data-bs-target="#janpost5">
+                        <img class="card-img-top" src="Jan/Janpost5.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐎𝐏𝐄𝐍𝐒 𝐁𝐎𝐒𝐒 𝟐𝟎𝟐𝟒</p>
+                        </div>
+                    </a>
+
+                    <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                    data-bs-target="#janpost6">
+                    <img class="card-img-top" src="Jan/Janpost6.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">𝐒𝐚 𝐡𝐚𝐥𝐢𝐩 𝐧𝐚 𝐭𝐮𝐥𝐨𝐲-𝐭𝐮𝐥𝐨𝐲 𝐧𝐚 𝐬𝐞𝐫𝐛𝐢𝐬𝐲𝐨, 𝐭𝐮𝐥𝐨𝐲 𝐭𝐮𝐥𝐨𝐲 𝐧𝐚 𝐩𝐚𝐧𝐥𝐢𝐥𝐢𝐧𝐥𝐚𝐧𝐠 𝐚𝐧𝐠 𝐢𝐧𝐚𝐚𝐭𝐮𝐩𝐚𝐠 𝐧𝐠 𝐌𝐚𝐤𝐚𝐭𝐢. </p>
+                    </div>
+                </a>
+
+                <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                    data-bs-target="#janpost7">
+                    <img class="card-img-top" src="Jan/Janpost7.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐋𝐎𝐕𝐄 𝐂𝐀𝐑𝐀𝐕𝐀𝐍 </p>
+                    </div>
+                </a>
+
+                <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                    data-bs-target="#janpost8">
+                    <img class="card-img-top" src="Jan/Janpost8.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">𝐂𝐢𝐭𝐲 𝐨𝐟 𝐓𝐚𝐠𝐮𝐢𝐠 𝐒𝐚𝐭𝐞𝐥𝐥𝐢𝐭𝐞 𝐏𝐡𝐚𝐫𝐦𝐚𝐜𝐲 𝐟𝐨𝐫 𝐄𝐌𝐁𝐎 𝐁𝐚𝐫𝐚𝐧𝐠𝐚𝐲𝐬</p>
+                    </div>
+                </a>
+
+                <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                data-bs-target="#janpost9">
+                <img class="card-img-top" src="Jan/Janpost9.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">𝐏𝐡𝐢𝐥𝐡𝐞𝐚𝐥𝐭𝐡 𝐚𝐧𝐝 𝐌𝐞𝐝𝐢𝐜𝐚𝐥 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐜𝐞 𝐀𝐩𝐩𝐥𝐢𝐜𝐚𝐭𝐢𝐨𝐧 𝐟𝐨𝐫 𝐄𝐌𝐁𝐎 𝐁𝐚𝐫𝐚𝐧𝐠𝐚𝐲𝐬</p>
+                </div>
+            </a>
+
+            <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                data-bs-target="#janpost10">
+                <img class="card-img-top" src="Jan/Janpost10.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">𝐌𝐀𝐇𝐀𝐋𝐀𝐆𝐀𝐍𝐆 𝐀𝐍𝐔𝐍𝐒𝐘𝐎 𝐔𝐊𝐎𝐋 𝐒𝐀 𝐌𝐆𝐀 𝐇𝐈𝐍𝐃𝐈 𝐍𝐀𝐊𝐔𝐇𝐀𝐍𝐆 𝐏𝐀𝐌𝐀𝐒𝐊𝐎𝐍𝐆 𝐇𝐀𝐍𝐃𝐎𝐆</p>
+                </div>
+            </a>
+
+            <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+            data-bs-target="#janpost11">
+            <img class="card-img-top" src="Jan/Janpost11.jpg" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Patuloy ang inyong lungsod sa pagsasagawa ng flood control activities</p>
+            </div>
+        </a>
+
+
+        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#janpost12">
+        <img class="card-img-top" src="Jan/Janpost12.jpg" alt="Card image cap">
+        <div class="card-body">
+            <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐂𝐎𝐍𝐓𝐈𝐍𝐔𝐄𝐒 𝐓𝐎 𝐃𝐄𝐋𝐈𝐕𝐄𝐑 𝐐𝐔𝐀𝐋𝐈𝐓𝐘 𝐇𝐄𝐀𝐋𝐓𝐇 𝐒𝐄𝐑𝐕𝐈𝐂𝐄𝐒 𝐓𝐎 𝐄𝐌𝐁𝐎 𝐑𝐄𝐒𝐈𝐃𝐄𝐍𝐓𝐒 𝐀𝐒 𝐋𝐎𝐕𝐄 𝐂𝐀𝐑𝐀𝐕𝐀𝐍 𝐆𝐎𝐄𝐒 𝐓𝐎 𝐁𝐑𝐆𝐘. 𝐂𝐄𝐌𝐁𝐎</p>
+        </div>
+    </a>
+
+
+    <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+    data-bs-target="#janpost13">
+    <img class="card-img-top" src="Jan/Janpost13.jpg" alt="Card image cap">
+    <div class="card-body">
+        <p class="card-text">𝐅𝐢𝐫𝐞 𝐬𝐭𝐚𝐭𝐢𝐨𝐧𝐬 𝐬𝐚 𝐄𝐌𝐁𝐎, 𝐛𝐚𝐥𝐢𝐤 𝐬𝐚 𝐧𝐨𝐫𝐦𝐚𝐥 𝐧𝐚 𝐨𝐩𝐞𝐫𝐚𝐬𝐲𝐨𝐧
+        </p>
+    </div>
+</a>
+
+    
+<a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+data-bs-target="#janpost14">
+<img class="card-img-top" src="Jan/Janpost14.jpg" alt="Card image cap">
+<div class="card-body">
+    <p class="card-text">𝐌𝐠𝐚 𝐦𝐢𝐧𝐚𝐦𝐚𝐡𝐚𝐥 𝐧𝐚𝐦𝐢𝐧𝐠
+        𝐦𝐚𝐠-𝐚𝐚𝐫𝐚𝐥 𝐧𝐠 𝐄𝐌𝐁𝐎 𝐚𝐭 𝐤𝐚𝐧𝐢𝐥𝐚𝐧𝐠 𝐩𝐚𝐦𝐢𝐥𝐲𝐚:</p>
+</div>
+</a>
+
+
+<a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+data-bs-target="#janpost15">
+<img class="card-img-top" src="Jan/Janpost15.jpg" alt="Card image cap">
+<div class="card-body">
+    <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐌𝐀𝐘𝐎𝐑 𝐋𝐀𝐍𝐈 𝐂𝐀𝐘𝐄𝐓𝐀𝐍𝐎 𝐋𝐀𝐔𝐍𝐂𝐇𝐄𝐒 𝐅𝐈𝐑𝐒𝐓 𝐋𝐆𝐔-𝐑𝐔𝐍 𝐃𝐈𝐒𝐀𝐁𝐈𝐋𝐈𝐓𝐘 𝐑𝐄𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐍𝐃 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐌𝐄𝐍𝐓 𝐂𝐄𝐍𝐓𝐄𝐑 𝐈𝐍 𝐓𝐇𝐄 𝐂𝐎𝐔𝐍𝐓𝐑𝐘</p>
+</div>
+</a>
+
+<a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+data-bs-target="#janpost16">
+<img class="card-img-top" src="Jan/Janpost16.jpg" alt="Card image cap">
+<div class="card-body">
+    <p class="card-text">𝐇𝐎𝐌𝐄 𝐇𝐄𝐀𝐋𝐓𝐇 𝐀𝐓 𝐃𝐎𝐂𝐓𝐎𝐑 𝐎𝐍 𝐂𝐀𝐋𝐋 𝐁𝐔𝐊𝐀𝐒 𝐍𝐀 𝐑𝐈𝐍 𝐏𝐀𝐑𝐀 𝐒𝐀 𝐌𝐆𝐀 𝐄𝐌𝐁𝐎 𝐁𝐀𝐑𝐀𝐍𝐆𝐀𝐘𝐒</p>
+</div>
+</a>
+
+<a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+data-bs-target="#janpost17">
+<img class="card-img-top" src="Jan/Janpost17.jpg" alt="Card image cap">
+<div class="card-body">
+    <p class="card-text">𝐇𝐞𝐥𝐩 𝐃𝐞𝐬𝐤𝐬 𝐚𝐭 𝐒𝐡𝐮𝐭𝐭𝐥𝐞 𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬 𝐏𝐚𝐫𝐚 𝐬𝐚 𝐄𝐦𝐛𝐨 𝐁𝐚𝐫𝐚𝐧𝐠𝐚𝐲𝐬</p>
+</div>
+</a>
+
+
+<a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+data-bs-target="#janpost18">
+<img class="card-img-top" src="Jan/Janpost18.jpg" alt="Card image cap">
+<div class="card-body">
+    <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐇𝐄𝐀𝐋𝐓𝐇 𝐂𝐄𝐍𝐓𝐄𝐑 𝐒𝐀 𝐁𝐀𝐑𝐀𝐍𝐆𝐀𝐘 𝐏𝐎𝐒𝐓 𝐏𝐑𝐎𝐏𝐄𝐑 𝐒𝐎𝐔𝐓𝐇𝐒𝐈𝐃𝐄, 𝐁𝐔𝐊𝐀𝐒 𝐍𝐀</p>
+</div>
+</a>
+
+
+<a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+data-bs-target="#janpost19">
+<img class="card-img-top" src="Jan/Janpost19.jpg" alt="Card image cap">
+<div class="card-body">
+    <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐋𝐎𝐕𝐄 𝐂𝐀𝐑𝐀𝐕𝐀𝐍 </p>
+</div>
+</a>
+
+<a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+data-bs-target="#janpost20">
+<img class="card-img-top" src="Jan/Janpost20.jpg" alt="Card image cap">
+<div class="card-body">
+    <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐂𝐎𝐍𝐓𝐈𝐍𝐔𝐄𝐒 𝐓𝐎 𝐃𝐄𝐋𝐈𝐕𝐄𝐑 𝐐𝐔𝐀𝐋𝐈𝐓𝐘 𝐇𝐄𝐀𝐋𝐓𝐇 𝐒𝐄𝐑𝐕𝐈𝐂𝐄𝐒 𝐓𝐎 𝐄𝐌𝐁𝐎 𝐑𝐄𝐒𝐈𝐃𝐄𝐍𝐓𝐒 𝐀𝐒 𝐋𝐎𝐕𝐄 𝐂𝐀𝐑𝐀𝐕𝐀𝐍 𝐆𝐎𝐄𝐒 𝐓𝐎 𝐁𝐑𝐆𝐘. 𝐄𝐀𝐒𝐓 𝐑𝐄𝐌𝐁𝐎 𝐀𝐍𝐃 𝐁𝐑𝐆𝐘. 𝐑𝐈𝐙𝐀𝐋</p>
+</div>
+</a>
+        
+
+<a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+data-bs-target="#janpost21">
+<img class="card-img-top" src="Jan/Janpost21.jpg" alt="Card image cap">
+<div class="card-body">
+    <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐋𝐎𝐕𝐄 𝐂𝐀𝐑𝐀𝐕𝐀𝐍 </p>
+</div>
+</a>
+
+
+<a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+data-bs-target="#janpost22">
+<img class="card-img-top" src="Jan/Janpost22.jpg" alt="Card image cap">
+<div class="card-body">
+    <p class="card-text">𝐓𝐚𝐠𝐮𝐢𝐠 𝐏𝐡𝐚𝐫𝐦𝐚𝐜𝐲 𝐟𝐨𝐫 𝐖𝐞𝐬𝐭 𝐑𝐞𝐦𝐛𝐨 𝐑𝐞𝐬𝐢𝐝𝐞𝐧𝐭𝐬</p>
+</div>
+</a>
+
+
+<a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+data-bs-target="#janpost23">
+<img class="card-img-top" src="Jan/Janpost23.jpg" alt="Card image cap">
+<div class="card-body">
+    <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐄𝐗𝐓𝐄𝐍𝐃𝐒 𝐓𝐇𝐄 𝐃𝐄𝐀𝐃𝐋𝐈𝐍𝐄 𝐅𝐎𝐑 𝐏𝐀𝐘𝐌𝐄𝐍𝐓 𝐎𝐅 𝐁𝐔𝐒𝐈𝐍𝐄𝐒𝐒 𝐑𝐄𝐍𝐄𝐖𝐀𝐋𝐒 𝐓𝐎 𝐉𝐀𝐍𝐔𝐀𝐑𝐘 𝟐𝟐</p>
+</div>
+</a>
+
+<a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+data-bs-target="#janpost24">
+<img class="card-img-top" src="Jan/Janpost24.jpg" alt="Card image cap">
+<div class="card-body">
+    <p class="card-text">𝐌𝐀𝐘𝐎𝐑 𝐋𝐀𝐍𝐈 𝐂𝐀𝐘𝐄𝐓𝐀𝐍𝐎 𝐎𝐏𝐄𝐍𝐒 𝟐𝟒/𝟕 𝐃𝐈𝐀𝐆𝐍𝐎𝐒𝐓𝐈𝐂 𝐋𝐀𝐁 𝐅𝐎𝐑 𝐄𝐌𝐄𝐑𝐆𝐄𝐍𝐂𝐘 𝐏𝐀𝐓𝐈𝐄𝐍𝐓𝐒</p>
+</div>
+</a>
+            
+
+<a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+data-bs-target="#janpost25">
+<img class="card-img-top" src="Jan/Janpost25.jpg" alt="Card image cap">
+<div class="card-body">
+    <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐂𝐎𝐍𝐓𝐈𝐍𝐔𝐄𝐒 𝐓𝐎 𝐃𝐄𝐋𝐈𝐕𝐄𝐑 𝐐𝐔𝐀𝐋𝐈𝐓𝐘 𝐇𝐄𝐀𝐋𝐓𝐇 𝐒𝐄𝐑𝐕𝐈𝐂𝐄𝐒 𝐓𝐎 𝐄𝐌𝐁𝐎 𝐑𝐄𝐒𝐈𝐃𝐄𝐍𝐓𝐒 𝐀𝐒 𝐋𝐎𝐕𝐄 𝐂𝐀𝐑𝐀𝐕𝐀𝐍 𝐆𝐎𝐄𝐒 𝐓𝐎 𝐁𝐑𝐆𝐘. 𝐏𝐄𝐌𝐁𝐎 𝐀𝐍𝐃 𝐁𝐑𝐆𝐘. 𝐏𝐈𝐓𝐎𝐆𝐎</p>
+</div>
+</a>
+
+<a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+data-bs-target="#janpost26">
+<img class="card-img-top" src="Jan/Janpost26.jpg" alt="Card image cap">
+<div class="card-body">
+    <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐌𝐀𝐘𝐎𝐑 𝐋𝐀𝐍𝐈 𝐂𝐀𝐘𝐄𝐓𝐀𝐍𝐎 𝐁𝐎𝐎𝐒𝐓𝐒 𝐅𝐋𝐎𝐎𝐃-𝐂𝐎𝐍𝐓𝐑𝐎𝐋 𝐌𝐄𝐀𝐒𝐔𝐑𝐄𝐒 𝐈𝐍 𝐄𝐌𝐁𝐎 𝐁𝐀𝐑𝐀𝐍𝐆𝐀𝐘𝐒</p>
+</div>
+</a>
+
+    <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+    data-bs-target="#janpost27">
+    <img class="card-img-top" src="Jan/Janpost27.jpg" alt="Card image cap">
+    <div class="card-body">
+    <p class="card-text">𝐌𝐚𝐲𝐨𝐫 𝐋𝐚𝐧𝐢 𝐂𝐚𝐲𝐞𝐭𝐚𝐧𝐨 𝐡𝐢𝐠𝐡𝐥𝐢𝐠𝐡𝐭𝐬 𝐢𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐜𝐞 𝐨𝐟 𝐛𝐢𝐫𝐝 𝐝𝐢𝐯𝐞𝐫𝐬𝐢𝐭𝐲 𝐚𝐬𝐬𝐞𝐬𝐬𝐦𝐞𝐧𝐭 𝐚𝐧𝐝 𝐦𝐨𝐧𝐢𝐭𝐨𝐫𝐢𝐧𝐠 𝐢𝐧 𝐓𝐚𝐠𝐮𝐢𝐠</p>
+    </div>
+    </a>
+                
+    <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+    data-bs-target="#janpost28">
+    <img class="card-img-top" src="Jan/Janpost28.jpg" alt="Card image cap">
+    <div class="card-body">
+    <p class="card-text">𝐍𝐀𝐑𝐈𝐓𝐎 𝐊𝐀𝐌𝐈 𝐏𝐀𝐑𝐀 𝐒𝐀'𝐘𝐎!</p>
+    </div>
+    </a>
+
+
+    <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+    data-bs-target="#janpost29">
+    <img class="card-img-top" src="Jan/Janpost29.jpg" alt="Card image cap">
+    <div class="card-body">
+    <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐋𝐎𝐕𝐄 𝐂𝐀𝐑𝐀𝐕𝐀𝐍 </p>
+    </div>
+    </a>
+
+    <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+    data-bs-target="#janpost30">
+    <img class="card-img-top" src="Jan/Janpost30.jpg" alt="Card image cap">
+    <div class="card-body">
+    <p class="card-text">𝐂𝐋𝐄𝐀𝐍𝐔𝐏 𝐃𝐑𝐈𝐕𝐄 - 𝐁𝐀𝐑𝐀𝐍𝐆𝐀𝐘 𝐏𝐄𝐌𝐁𝐎</p>
+    </div>
+    </a>
+
+    <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+    data-bs-target="#janpost31">
+    <img class="card-img-top" src="Jan/Janpost31.jpg" alt="Card image cap">
+    <div class="card-body">
+    <p class="card-text">𝐒𝐂𝐑𝐄𝐄𝐍𝐈𝐍𝐆 𝐖𝐈𝐓𝐇 𝐃𝐑𝐔𝐆-𝐓𝐄𝐒𝐓𝐈𝐍𝐆 𝐎𝐅 𝐁𝐀𝐑𝐀𝐍𝐆𝐀𝐘 𝐏𝐄𝐌𝐁𝐎 𝐄𝐌𝐏𝐋𝐎𝐘𝐄𝐄𝐒</p>
+    </div>
+    </a>
+
+
+    <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+    data-bs-target="#janpost32">
+    <img class="card-img-top" src="Jan/Janpost32.jpg" alt="Card image cap">
+    <div class="card-body">
+    <p class="card-text">𝐃𝐄𝐂𝐋𝐎𝐆𝐆𝐈𝐍𝐆 𝐀𝐍𝐃 𝐂𝐋𝐄𝐀𝐍𝐔𝐏 𝐃𝐑𝐈𝐕𝐄 - 𝐁𝐀𝐑𝐀𝐍𝐆𝐀𝐘 𝐖𝐄𝐒𝐓 𝐑𝐄𝐌𝐁𝐎</p>
+    </div>
+    </a>
+
+
+    <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+    data-bs-target="#janpost33">
+    <img class="card-img-top" src="Jan/Janpost33.jpg" alt="Card image cap">
+    <div class="card-body">
+    <p class="card-text">𝐃𝐄𝐂𝐋𝐎𝐆𝐆𝐈𝐍𝐆 𝐀𝐍𝐃 𝐂𝐋𝐄𝐀𝐍𝐔𝐏 𝐃𝐑𝐈𝐕𝐄 - 𝐁𝐀𝐑𝐀𝐍𝐆𝐀𝐘 𝐒𝐎𝐔𝐓𝐇 𝐂𝐄𝐌𝐁𝐎</p>
+    </div>
+    </a>
+
+
+    <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+    data-bs-target="#janpost34">
+    <img class="card-img-top" src="Jan/Janpost34.jpg" alt="Card image cap">
+    <div class="card-body">
+    <p class="card-text">𝐌𝐆𝐀 𝐒𝐄𝐑𝐁𝐈𝐒𝐘𝐎 𝐏𝐀𝐑𝐀 𝐒𝐀 𝐌𝐆𝐀 𝐏𝐄𝐑𝐒𝐎𝐍𝐒 𝐖𝐈𝐓𝐇 𝐃𝐈𝐒𝐀𝐁𝐈𝐋𝐈𝐓𝐘 (𝐏𝐖𝐃) 𝐒𝐀 𝐓𝐀𝐆𝐔𝐈𝐆 𝐃𝐈𝐒𝐀𝐁𝐈𝐋𝐈𝐓𝐘 𝐑𝐄𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐍𝐃 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐌𝐄𝐍𝐓 𝐂𝐄𝐍𝐓𝐄𝐑 (𝐓𝐃𝐑𝐃𝐂)</p>
+    </div>
+    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <!--  Febuary -->
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed text-decoration-none dropdown-toggle" type="button"
+                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            February
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="row p-5 gap-3 collapse justify-content-around" aria-labelledby="headingTwo"
+                    data-parent="#accordionExample">
+                    <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                        data-bs-target="#febpost1">
+                        <img class="card-img-top" src="Feb/febpost1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">𝐀𝐍𝐔𝐍𝐒𝐘𝐎 𝐔𝐊𝐎𝐋 𝐒𝐀 𝐃𝐀𝐘𝐂𝐀𝐑𝐄 𝐂𝐄𝐍𝐓𝐄𝐑𝐒 𝐒𝐀
+                                𝐄𝐌𝐁𝐎 𝐁𝐀𝐑𝐀𝐍𝐆𝐀𝐘𝐒</p>
+                        </div>
+                    </a>
+
+                    <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                        data-bs-target="#febpost2">
+                        <img class="card-img-top" src="Feb/febpost2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">𝐂𝐢𝐭𝐲 𝐨𝐟 𝐓𝐚𝐠𝐮𝐢𝐠 𝐩𝐚𝐫𝐭𝐧𝐞𝐫𝐬 𝐰𝐢𝐭𝐡 𝐃𝐎𝐒𝐓-𝐏𝐓𝐑𝐈 𝐭𝐨 𝐩𝐫𝐨𝐯𝐢𝐝𝐞 𝐭𝐞𝐜𝐡-𝐛𝐚𝐬𝐞𝐝 𝐭𝐞𝐱𝐭𝐢𝐥𝐞 𝐥𝐢𝐯𝐞𝐥𝐢𝐡𝐨𝐨𝐝 𝐨𝐩𝐩𝐨𝐫𝐭𝐮𝐧𝐢𝐭𝐢𝐞𝐬 𝐟𝐨𝐫 𝐓𝐚𝐠𝐮𝐢𝐠𝐞𝐧̃𝐨𝐬</p>
+                        </div>
+                    </a>    
+
+                    <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                    data-bs-target="#febpost3">
+                    <img class="card-img-top" src="Feb/febpost3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">𝐌𝐀𝐘𝐎𝐑 𝐋𝐀𝐍𝐈 𝐂𝐀𝐘𝐄𝐓𝐀𝐍𝐎 𝐈𝐍𝐀𝐔𝐆𝐔𝐑𝐀𝐓𝐄𝐒 𝐍𝐄𝐖 𝐌𝐔𝐋𝐓𝐈𝐏𝐔𝐑𝐏𝐎𝐒𝐄 𝐁𝐔𝐈𝐋𝐃𝐈𝐍𝐆 𝐈𝐍 𝐁𝐀𝐑𝐀𝐍𝐆𝐀𝐘 𝐂𝐀𝐋𝐙𝐀𝐃𝐀</p>
+                    </div>
+                </a>
+
+                <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                data-bs-target="#febpost4">
+                <img class="card-img-top" src="Feb/febpost4.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">𝐃𝐄𝐂𝐋𝐎𝐆𝐆𝐈𝐍𝐆 𝐀𝐍𝐃 𝐂𝐋𝐄𝐀𝐍𝐔𝐏 𝐃𝐑𝐈𝐕𝐄
+                        𝐁𝐀𝐑𝐀𝐍𝐆𝐀𝐘 𝐄𝐀𝐒𝐓 𝐑𝐄𝐌𝐁𝐎 𝐀𝐍𝐃 𝐁𝐀𝐑𝐀𝐍𝐆𝐀𝐘 𝐏𝐎𝐒𝐓 𝐏𝐑𝐎𝐏𝐄𝐑 𝐒𝐎𝐔𝐓𝐇𝐒𝐈𝐃𝐄</p>
+                </div>
+            </a>
+
+            <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+            data-bs-target="#febpost5">
+            <img class="card-img-top" src="Feb/febpost5.jpg" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐎𝐅𝐅𝐄𝐑𝐒 𝐅𝐑𝐄𝐄 𝐀𝐍𝐓𝐈-𝐑𝐀𝐁𝐈𝐄𝐒 𝐕𝐀𝐂𝐂𝐈𝐍𝐀𝐓𝐈𝐎𝐍 𝐈𝐍 𝐁𝐀𝐑𝐀𝐍𝐆𝐀𝐘 𝐂𝐄𝐌𝐁𝐎</p>
+            </div>
+        </a>
+
+        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+            data-bs-target="#febpost6">
+            <img class="card-img-top" src="Feb/febpost6.jpg" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐁𝐑𝐈𝐆𝐇𝐓𝐄𝐍𝐒 𝐔𝐏 𝐒𝐓𝐑𝐄𝐄𝐓𝐒 𝐎𝐅 𝐁𝐀𝐑𝐀𝐍𝐆𝐀𝐘 𝐂𝐄𝐍𝐓𝐑𝐀𝐋 𝐒𝐈𝐆𝐍𝐀𝐋 𝐖𝐈𝐓𝐇 𝐍𝐄𝐖 𝐒𝐓𝐑𝐄𝐄𝐓𝐋𝐈𝐆𝐇𝐓𝐒 𝐅𝐎𝐑 𝐄𝐍𝐇𝐀𝐍𝐂𝐄𝐃 𝐒𝐀𝐅𝐄𝐓𝐘</p>
+            </div>
+        </a>
+
+
+        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#febpost7">
+        <img class="card-img-top" src="Feb/febpost7.jpg" alt="Card image cap">
+        <div class="card-body">
+            <p class="card-text">𝐈𝐬𝐢𝐧𝐚𝐤𝐫𝐢𝐩𝐢𝐬𝐲𝐨 𝐚𝐧𝐠 𝐤𝐚𝐧𝐢𝐥𝐚𝐧𝐠  𝐦𝐠𝐚 “𝐚𝐧𝐚𝐤": 𝐦𝐠𝐚 𝐤𝐚𝐬𝐢𝐧𝐮𝐧𝐠𝐚𝐥𝐢𝐧𝐠𝐚𝐧 𝐚𝐭 𝐬𝐚𝐛𝐨𝐭𝐚𝐡𝐞𝐧𝐠 𝐠𝐢𝐧𝐚𝐠𝐚𝐰𝐚 𝐧𝐠 𝐌𝐚𝐤𝐚𝐭𝐢</p>
+        </div>
+    </a>
+
+        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#febpost8">
+        <img class="card-img-top" src="Feb/febpost8.jpg" alt="Card image cap">
+        <div class="card-body">
+            <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐋𝐎𝐕𝐄 𝐂𝐀𝐑𝐀𝐕𝐀𝐍</p>
+        </div>
+    </a>
+
+
+
+
+         <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#febpost9">
+        <img class="card-img-top" src="Feb/febpost9.jpg" alt="Card image cap">
+        <div class="card-body">
+            <p class="card-text">𝐈𝐌𝐏𝐎𝐑𝐓𝐀𝐍𝐓𝐄𝐍𝐆 𝐀𝐍𝐔𝐍𝐒𝐘𝐎
+
+                𝗛𝗜𝗡𝗗𝗜 𝗣𝗜𝗡𝗔𝗣𝗔𝗬𝗔𝗚𝗔𝗡 𝗦𝗔 𝗠𝗚𝗔 𝗣𝗔𝗠𝗕𝗔𝗡𝗦𝗔𝗡𝗚 𝗞𝗔𝗟𝗦𝗔𝗗𝗔 𝗔𝗡𝗚 𝗧𝗥𝗜𝗖𝗬𝗖𝗟𝗘, 𝗣𝗘𝗗𝗜𝗖𝗔𝗕, 𝗔𝗧 𝗗𝗘-𝗠𝗢𝗧𝗢𝗥 𝗡𝗔 𝗣𝗘𝗗𝗜𝗖𝗔𝗕</p>
+        </div>
+    </a>
+
+      <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#febpost10">
+        <img class="card-img-top" src="Feb/febpost10.jpg" alt="Card image cap">
+        <div class="card-body">
+            <p class="card-text">𝐋𝐀𝐍𝐃 𝐑𝐄𝐆𝐈𝐒𝐓𝐑𝐀𝐓𝐈𝐎𝐍 𝐀𝐔𝐓𝐇𝐎𝐑𝐈𝐓𝐘 𝐓𝐑𝐀𝐍𝐒𝐅𝐄𝐑𝐒 𝐓𝐑𝐀𝐍𝐒𝐀𝐂𝐓𝐈𝐎𝐍𝐒 𝐅𝐎𝐑 𝐏𝐑𝐎𝐏𝐄𝐑𝐓𝐈𝐄𝐒 𝐈𝐍 𝐄𝐌𝐁𝐎 𝐁𝐀𝐑𝐀𝐍𝐆𝐀𝐘𝐒 𝐓𝐎 𝐓𝐀𝐆𝐔𝐈𝐆 𝐑𝐄𝐆𝐈𝐒𝐓𝐑𝐘 𝐎𝐅 𝐃𝐄𝐄𝐃𝐒</p>
+        </div>
+    </a>
+
+
+        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#febpost11">
+        <img class="card-img-top" src="Feb/febpost11.jpg" alt="Card image cap">
+        <div class="card-body">
+            <p class="card-text">𝐌𝐀𝐘 𝐅𝐎𝐑𝐄𝐕𝐄𝐑: 𝐀𝐧𝐠 𝐊𝐰𝐞𝐧𝐭𝐨𝐧𝐠 𝐏𝐚𝐠-𝐈𝐛𝐢𝐠 𝐧𝐢 𝐅𝐚𝐭𝐡𝐞𝐫 𝐚𝐭 𝐌𝐨𝐭𝐡𝐞𝐫
+            </p>
+        </div>
+    </a>
+
+
+    <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#febpost12">
+        <img class="card-img-top" src="Feb/febpost12.jpg" alt="Card image cap">
+        <div class="card-body">
+            <p class="card-text">𝐓𝐚𝐧𝐨𝐧𝐠 𝐧𝐠 𝐏𝐮𝐬𝐨</p>
+        </div>
+    </a>
+
+            <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#febpost13">
+        <img class="card-img-top" src="Feb/febpost13.jpg" alt="Card image cap">
+        <div class="card-body">
+            <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐎𝐅𝐅𝐄𝐑𝐒 𝐅𝐑𝐄𝐄 𝐀𝐍𝐓𝐈-𝐑𝐀𝐁𝐈𝐄𝐒 𝐕𝐀𝐂𝐂𝐈𝐍𝐀𝐓𝐈𝐎𝐍 𝐈𝐍 𝐁𝐀𝐑𝐀𝐍𝐆𝐀𝐘 𝐏𝐄𝐌𝐁𝐎</p>
+        </div>
+    </a>
+
+    <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+    data-bs-target="#febpost14">
+    <img class="card-img-top" src="Feb/febpost14.jpg" alt="Card image cap">
+    <div class="card-body">
+        <p class="card-text">𝐌𝐀𝐘𝐎𝐑 𝐋𝐀𝐍𝐈 𝐂𝐀𝐘𝐄𝐓𝐀𝐍𝐎 𝐔𝐍𝐕𝐄𝐈𝐋𝐒 𝐋𝐎𝐕𝐄 𝐀𝐓 𝐓𝐇𝐄 𝐏𝐀𝐑𝐊</p>
+    </div>
+</a>
+
+          <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+    data-bs-target="#febpost15">
+    <img class="card-img-top" src="Feb/febpost15.jpg" alt="Card image cap">
+    <div class="card-body">
+        <p class="card-text">𝐋𝐎𝐕𝐄 𝐀𝐓 𝐓𝐇𝐄 𝐏𝐀𝐑𝐊 𝐆𝐔𝐈𝐃𝐄𝐋𝐈𝐍𝐄𝐒</p>
+    </div>
+</a>
+
+        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+    data-bs-target="#febpost16">
+    <img class="card-img-top" src="Feb/febpost16.jpg" alt="Card image cap">
+    <div class="card-body">
+        <p class="card-text">𝐑𝐞𝐭𝐫𝐨 𝐍𝐢𝐠𝐡𝐭: 𝐁𝐥𝐚𝐬𝐭 𝐟𝐫𝐨𝐦 𝐭𝐡𝐞 𝐏𝐚𝐬𝐭</p>
+    </div>
+</a>
+
+
+        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#febpost17">
+        <img class="card-img-top" src="Feb/febpost17.jpg" alt="Card image cap">
+        <div class="card-body">
+        <p class="card-text">Personal na binisita at kinumusta ni Mayor Lani Cayetano nitong Lunes, Pebrero 12, ang mga pamilya at indibidwal na naapektuhan ng sunog sa Barangay Upper Bicutan.</p>
+        </div>
+        </a>
+
+
+        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#febpost18">
+        <img class="card-img-top" src="Feb/febpost18.jpg" alt="Card image cap">
+        <div class="card-body">
+        <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐎𝐅𝐅𝐄𝐑𝐒 𝐅𝐑𝐄𝐄 𝐀𝐍𝐓𝐈-𝐑𝐀𝐁𝐈𝐄𝐒 𝐕𝐀𝐂𝐂𝐈𝐍𝐀𝐓𝐈𝐎𝐍 𝐈𝐍 𝐁𝐀𝐑𝐀𝐍𝐆𝐀𝐘 𝐖𝐄𝐒𝐓 𝐑𝐄𝐌𝐁𝐎</p>
+        </div>
+        </a>
+
+
+        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#febpost19">
+        <img class="card-img-top" src="Feb/febpost19.jpg" alt="Card image cap">
+        <div class="card-body">
+        <p class="card-text">Taguig City's dental practitioners gathered at the Lakeshore Activity Center on February 13 for a Silver Diamine Fluoride (SDF) Training Workshop organized by the City Health Office to improve dental treatment effectiveness.</p>
+        </div>
+        </a>
+
+
+        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#febpost20">
+        <img class="card-img-top" src="Feb/febpost20.jpg" alt="Card image cap">
+        <div class="card-body">
+        <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐇𝐎𝐒𝐓𝐒 𝐀𝐒𝐒𝐈𝐒𝐓𝐀𝐍𝐂𝐄 𝐓𝐎 𝐈𝐍𝐃𝐈𝐕𝐈𝐃𝐔𝐀𝐋𝐒 𝐈𝐍 𝐂𝐑𝐈𝐒𝐈𝐒 𝐒𝐈𝐓𝐔𝐀𝐓𝐈𝐎𝐍 (𝐀𝐈𝐂𝐒) 𝐏𝐑𝐎𝐆𝐑𝐀𝐌 𝐏𝐀𝐘𝐎𝐔𝐓 𝐃𝐈𝐒𝐓𝐑𝐈𝐁𝐔𝐓𝐈𝐎𝐍 𝐅𝐎𝐑  𝐉𝐎𝐃𝐀 𝐁𝐄𝐍𝐄𝐅𝐈𝐂𝐈𝐀𝐑𝐈𝐄𝐒</p>
+        </div>
+        </a>
+
+        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#febpost21">
+        <img class="card-img-top" src="Feb/febpost21.jpg" alt="Card image cap">
+        <div class="card-body">
+        <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐋𝐎𝐕𝐄 𝐂𝐀𝐑𝐀𝐕𝐀𝐍</p>
+        </div>
+        </a>
+
+        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#febpost22">
+        <img class="card-img-top" src="Feb/febpost22.jpg" alt="Card image cap">
+        <div class="card-body">
+        <p class="card-text">Patuloy ang inyong lungsod sa pagsasagawa ng flood control activities</p>
+        </div>
+        </a>
+
+        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#febpost23">
+        <img class="card-img-top" src="Feb/febpost23.jpg" alt="Card image cap">
+        <div class="card-body">
+        <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐂𝐎𝐍𝐓𝐈𝐍𝐔𝐄𝐒 𝐓𝐎 𝐃𝐄𝐋𝐈𝐕𝐄𝐑 𝐐𝐔𝐀𝐋𝐈𝐓𝐘 𝐇𝐄𝐀𝐋𝐓𝐇 𝐒𝐄𝐑𝐕𝐈𝐂𝐄𝐒 𝐓𝐎 𝐄𝐌𝐁𝐎 𝐑𝐄𝐒𝐈𝐃𝐄𝐍𝐓𝐒 𝐀𝐒 𝐋𝐎𝐕𝐄 𝐂𝐀𝐑𝐀𝐕𝐀𝐍 𝐆𝐎𝐄𝐒 𝐓𝐎 𝐁𝐑𝐆𝐘. 𝐂𝐄𝐌𝐁𝐎</p>
+        </div>
+        </a>
+
+        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#febpost24">
+        <img class="card-img-top" src="Feb/febpost24.jpg" alt="Card image cap">
+        <div class="card-body">
+        <p class="card-text">𝐃𝐄𝐂𝐋𝐎𝐆𝐆𝐈𝐍𝐆 𝐀𝐍𝐃 𝐂𝐋𝐄𝐀𝐍𝐔𝐏 𝐃𝐑𝐈𝐕𝐄 </p>
+        </div>
+        </a>
+
+
+        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#febpost25">
+        <img class="card-img-top" src="Feb/febpost25.jpg" alt="Card image cap">
+        <div class="card-body">
+        <p class="card-text">𝐌𝐀𝐇𝐀𝐋𝐀𝐆𝐀𝐍𝐆 𝐀𝐍𝐔𝐍𝐒𝐘𝐎 𝐔𝐊𝐎𝐋 𝐒𝐀 𝐄-𝐓𝐑𝐈𝐊𝐄𝐒 </p>
+        </div>
+        </a>
+
+
+        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#febpost26">
+        <img class="card-img-top" src="Feb/febpost26.jpg" alt="Card image cap">
+        <div class="card-body">
+        <p class="card-text">𝐀 𝐒𝐞𝐧𝐢𝐨𝐫𝐬' 𝐁𝐚𝐥𝐥 𝐭𝐨 𝐑𝐞𝐦𝐞𝐦𝐛𝐞𝐫</p>
+        </div>
+        </a>
+
+
+        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#febpost27">
+        <img class="card-img-top" src="Feb/febpost27.jpg" alt="Card image cap">
+        <div class="card-body">
+        <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐎𝐅𝐅𝐄𝐑𝐒 𝐅𝐑𝐄𝐄 𝐀𝐍𝐓𝐈-𝐑𝐀𝐁𝐈𝐄𝐒 𝐕𝐀𝐂𝐂𝐈𝐍𝐀𝐓𝐈𝐎𝐍 𝐈𝐍 𝐁𝐀𝐑𝐀𝐍𝐆𝐀𝐘 𝐄𝐀𝐒𝐓 𝐑𝐄𝐌𝐁𝐎</p>
+        </div>
+        </a>
+
+        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#febpost28">
+        <img class="card-img-top" src="Feb/febpost28.jpg" alt="Card image cap">
+        <div class="card-body">
+        <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐋𝐎𝐕𝐄 𝐂𝐀𝐑𝐀𝐕𝐀𝐍</p>
+        </div>
+        </a>
+
+
+        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#febpost29">
+        <img class="card-img-top" src="Feb/febpost29.jpg" alt="Card image cap">
+        <div class="card-body">
+        <p class="card-text">𝐕𝐄𝐗 𝐑𝐎𝐁𝐎𝐓𝐈𝐂𝐒 𝐍𝐀𝐓𝐈𝐎𝐍𝐀𝐋 𝐂𝐇𝐀𝐌𝐏𝐈𝐎𝐍𝐒𝐇𝐈𝐏 𝟐𝟎𝟐𝟒</p>
+        </div>
+        </a>
+
+
+        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#febpost30">
+        <img class="card-img-top" src="Feb/febpost30.jpg" alt="Card image cap">
+        <div class="card-body">
+        <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐑𝐄𝐒𝐓𝐎𝐑𝐄𝐒/𝐑𝐄𝐏𝐋𝐀𝐂𝐄𝐒 𝐒𝐓𝐑𝐄𝐄𝐓 𝐋𝐈𝐆𝐇𝐓𝐒 𝐈𝐍 𝐁𝐑𝐆𝐘. 𝐄𝐀𝐒𝐓 𝐑𝐄𝐌𝐁𝐎, 𝐁𝐑𝐆𝐘. 𝐂𝐎𝐌𝐄𝐌𝐁𝐎, 𝐀𝐍𝐃 𝐊𝐀𝐋𝐀𝐘𝐀𝐀𝐍-𝐁𝐆𝐂 𝐋𝐈𝐍𝐊 𝐁𝐑𝐈𝐃𝐆𝐄</p>
+        </div>
+        </a>
+
+
+        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#febpost31">
+        <img class="card-img-top" src="Feb/febpost31.jpg" alt="Card image cap">
+        <div class="card-body">
+        <p class="card-text">𝐈𝐌𝐏𝐎𝐑𝐓𝐀𝐍𝐓 𝐀𝐍𝐍𝐎𝐔𝐍𝐂𝐄𝐌𝐄𝐍𝐓</p>
+        </div>
+        </a>    
+
+        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#febpost32">
+        <img class="card-img-top" src="Feb/febpost32.jpg" alt="Card image cap">
+        <div class="card-body">
+        <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐇𝐎𝐒𝐓𝐒 𝐀𝐒𝐒𝐈𝐒𝐓𝐀𝐍𝐂𝐄 𝐓𝐎 𝐈𝐍𝐃𝐈𝐕𝐈𝐃𝐔𝐀𝐋𝐒 𝐈𝐍 𝐂𝐑𝐈𝐒𝐈𝐒 𝐒𝐈𝐓𝐔𝐀𝐓𝐈𝐎𝐍 (𝐀𝐈𝐂𝐒) 𝐃𝐈𝐒𝐓𝐑𝐈𝐁𝐔𝐓𝐈𝐎𝐍 𝐅𝐎𝐑 𝐕𝐄𝐍𝐃𝐎𝐑𝐒</p>
+        </div>
+        </a>
+
+        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#febpost33">
+        <img class="card-img-top" src="Feb/febpost33.jpg" alt="Card image cap">
+        <div class="card-body">
+        <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐂𝐎𝐍𝐓𝐈𝐍𝐔𝐄𝐒 𝐓𝐎 𝐃𝐄𝐋𝐈𝐕𝐄𝐑 𝐐𝐔𝐀𝐋𝐈𝐓𝐘 𝐇𝐄𝐀𝐋𝐓𝐇 𝐒𝐄𝐑𝐕𝐈𝐂𝐄𝐒 𝐓𝐎 𝐄𝐌𝐁𝐎 𝐑𝐄𝐒𝐈𝐃𝐄𝐍𝐓𝐒 𝐀𝐒 𝐋𝐎𝐕𝐄 𝐂𝐀𝐑𝐀𝐕𝐀𝐍 𝐆𝐎𝐄𝐒 𝐓𝐎 𝐁𝐑𝐆𝐘. 𝐄𝐀𝐒𝐓 𝐑𝐄𝐌𝐁𝐎</p>
+        </div>
+        </a>
+
+
+        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#febpost34">
+        <img class="card-img-top" src="Feb/febpost34.jpg" alt="Card image cap">
+        <div class="card-body">
+        <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐑𝐄𝐒𝐓𝐎𝐑𝐄𝐒/𝐑𝐄𝐏𝐋𝐀𝐂𝐄𝐒 𝐒𝐓𝐑𝐄𝐄𝐓 𝐋𝐈𝐆𝐇𝐓𝐒 𝐈𝐍 𝐁𝐑𝐆𝐘. 𝐄𝐀𝐒𝐓 𝐑𝐄𝐌𝐁𝐎, 𝐁𝐑𝐆𝐘. 𝐂𝐄𝐌𝐁𝐎, 𝐁𝐑𝐆𝐘. 𝐏𝐄𝐌𝐁𝐎, 𝐀𝐍𝐃 𝐁𝐑𝐆𝐘. 𝐏𝐈𝐓𝐎𝐆𝐎</p>
+        </div>
+        </a>
+        
+        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#febpost35">
+        <img class="card-img-top" src="Feb/febpost35.jpg" alt="Card image cap">
+        <div class="card-body">
+        <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐇𝐎𝐒𝐓𝐒 𝐀𝐒𝐒𝐈𝐒𝐓𝐀𝐍𝐂𝐄 𝐓𝐎 𝐈𝐍𝐃𝐈𝐕𝐈𝐃𝐔𝐀𝐋𝐒 𝐈𝐍 𝐂𝐑𝐈𝐒𝐈𝐒 𝐒𝐈𝐓𝐔𝐀𝐓𝐈𝐎𝐍 (𝐀𝐈𝐂𝐒) 𝐃𝐈𝐒𝐓𝐑𝐈𝐁𝐔𝐓𝐈𝐎𝐍 𝐅𝐎𝐑 𝐄𝐌𝐁𝐎 𝐕𝐄𝐍𝐃𝐎𝐑𝐒</p>
+        </div>
+        </a>
+
+
+        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#febpost36">
+        <img class="card-img-top" src="Feb/febpost36.jpg" alt="Card image cap">
+        <div class="card-body">
+        <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐋𝐎𝐕𝐄 𝐂𝐀𝐑𝐀𝐕𝐀𝐍</p>
+        </div>
+        </a>
+
+
+        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#febpost37">
+        <img class="card-img-top" src="Feb/febpost37.jpg" alt="Card image cap">
+        <div class="card-body">
+        <p class="card-text">𝐀𝐍𝐍𝐎𝐔𝐍𝐂𝐄𝐌𝐄𝐍𝐓
+            𝑵𝒆𝒘 𝒁𝑰𝑷 𝑪𝒐𝒅𝒆𝒔 𝒇𝒐𝒓 𝑬𝑴𝑩𝑶 𝑩𝒂𝒓𝒂𝒏𝒈𝒂𝒚𝒔, 𝑪𝒊𝒕𝒚 𝒐𝒇 𝑻𝒂𝒈𝒖𝒊𝒈</p>
+        </div>
+        </a>
+
+
+        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#febpost38">
+        <img class="card-img-top" src="Feb/febpost38.jpg" alt="Card image cap">
+        <div class="card-body">
+        <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐎𝐅𝐅𝐄𝐑𝐒 𝐅𝐑𝐄𝐄 𝐀𝐍𝐓𝐈-𝐑𝐀𝐁𝐈𝐄𝐒 𝐕𝐀𝐂𝐂𝐈𝐍𝐀𝐓𝐈𝐎𝐍 𝐈𝐍 𝐁𝐀𝐑𝐀𝐍𝐆𝐀𝐘 𝐑𝐈𝐙𝐀𝐋</p>
+        </div>
+        </a>
+
+
+        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#febpost39">
+        <img class="card-img-top" src="Feb/febpost39.jpg" alt="Card image cap">
+        <div class="card-body">
+        <p class="card-text">𝐀𝐍𝐍𝐎𝐔𝐍𝐂𝐄𝐌𝐄𝐍𝐓
+            𝐓𝐀𝐆𝐔𝐈𝐆 𝐏𝐀𝐒𝐒𝐄𝐒 𝐒𝐏𝐄𝐂𝐈𝐀𝐋 𝐄𝐕𝐄𝐍𝐓𝐒 𝐏𝐄𝐑𝐌𝐈𝐓 𝐎𝐑𝐃𝐈𝐍𝐀𝐍𝐂𝐄 𝐓𝐎 𝐄𝐍𝐒𝐔𝐑𝐄 𝐒𝐀𝐅𝐄𝐓𝐘 𝐀𝐍𝐃 𝐎𝐑𝐃𝐄𝐑</p>
+        </div>
+        </a>
+
+
+        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#febpost40">
+        <img class="card-img-top" src="Feb/febpost40.jpg" alt="Card image cap">
+        <div class="card-body">
+        <p class="card-text">𝐁𝐚𝐫𝐚𝐧𝐠𝐚𝐲 𝐍𝐮𝐭𝐫𝐢𝐭𝐢𝐨𝐧 𝐂𝐨𝐦𝐦𝐢𝐭𝐭𝐞𝐞 𝐌𝐞𝐞𝐭𝐢𝐧𝐠 - 𝐏𝐨𝐬𝐭 𝐏𝐫𝐨𝐩𝐞𝐫 𝐒𝐨𝐮𝐭𝐡𝐬𝐢𝐝𝐞</p>
+        </div>
+        </a>
+
+        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#febpost41">
+        <img class="card-img-top" src="Feb/febpost41.jpg" alt="Card image cap">
+        <div class="card-body">
+        <p class="card-text">𝐁𝐚𝐫𝐚𝐧𝐠𝐚𝐲 𝐀𝐧𝐭𝐢-𝐃𝐫𝐮𝐠 𝐀𝐛𝐮𝐬𝐞 𝐂𝐨𝐮𝐧𝐜𝐢𝐥 𝐏𝐫𝐨𝐠𝐫𝐚𝐦 𝐈𝐦𝐩𝐥𝐞𝐦𝐞𝐧𝐭𝐚𝐭𝐢𝐨𝐧 𝐑𝐞𝐯𝐢𝐞𝐰 𝐚𝐧𝐝 𝐎𝐫𝐢𝐞𝐧𝐭𝐚𝐭𝐢𝐨𝐧</p>
+        </div>
+        </a>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <!--  Columns 3-->
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed text-decoration-none dropdown-toggle" type="button"
+                            data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            March
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="row p-5 gap-3 collapse justify-content-around"
+                    aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                        data-bs-target="#marpost1">
+                        <img class="card-img-top" src="March/marpost1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">𝐅𝐑𝐄𝐄 𝐒𝐄𝐋𝐅-𝐃𝐄𝐅𝐄𝐍𝐒𝐄 𝐓𝐑𝐀𝐈𝐍𝐈𝐍𝐆 𝐅𝐎𝐑
+                                𝐖𝐎𝐌𝐄𝐍
+                                𝐅𝐑𝐎𝐌 𝐓𝐇𝐄 𝐂𝐈𝐓𝐘 𝐎𝐅 𝐓𝐀𝐆𝐔𝐈𝐆 𝐓𝐇𝐈𝐒 𝐖𝐎𝐌𝐄𝐍’𝐒 𝐌𝐎𝐍𝐓𝐇!
+                            </p>
+                        </div>
+                    </a>
+                    <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                        data-bs-target="#marpost2">
+                        <img class="card-img-top" src="March/marpost2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐋𝐎𝐕𝐄 𝐂𝐀𝐑𝐀𝐕𝐀𝐍</p>
+                        </div>
+                    </a>
+
+
+                   
+
+                    <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                        data-bs-target="#marpost3">
+                        <img class="card-img-top" src="March/marpost3.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Patuloy ang inyong lungsod sa pagsasagawa ng flood control activities</p>
+                        </div>
+                    </a>
+
+
+                    <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                        data-bs-target="#marpost4">
+                        <img class="card-img-top" src="March/marpost4.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐋𝐎𝐕𝐄 𝐂𝐀𝐑𝐀𝐕𝐀𝐍 - 𝐁𝐑𝐆𝐘. 𝐓𝐔𝐊𝐓𝐔𝐊𝐀𝐍, 𝐁𝐑𝐆𝐘. 𝐂𝐄𝐍𝐓𝐑𝐀𝐋 𝐁𝐈𝐂𝐔𝐓𝐀𝐍, 𝐁𝐑𝐆𝐘. 𝐌𝐀𝐇𝐀𝐑𝐋𝐈𝐊𝐀 </p>
+                        </div>
+                    </a>
+
+                    <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                    data-bs-target="#marpost5">
+                    <img class="card-img-top" src="March/marpost5.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">𝐎𝐑𝐈𝐄𝐍𝐓𝐀𝐓𝐈𝐎𝐍 𝐎𝐍 𝐀𝐃𝐎𝐋𝐄𝐒𝐂𝐄𝐍𝐓 𝐇𝐄𝐀𝐋𝐓𝐇 𝐀𝐍𝐃 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐌𝐄𝐍𝐓 𝐏𝐑𝐎𝐆𝐑𝐀𝐌 (𝐀𝐇𝐃𝐏) 𝐀𝐌𝐎𝐍𝐆 𝐒𝐊 𝐋𝐄𝐀𝐃𝐄𝐑𝐒 𝐎𝐅 𝐓𝐀𝐆𝐔𝐈𝐆 𝐂𝐈𝐓𝐘</p>
+                    </div>
+                </a>
+
+                <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                data-bs-target="#marpost6">
+                <img class="card-img-top" src="March/marpost6.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">𝐀𝐍𝐆 𝐏𝐀𝐑𝐊𝐄 𝐀𝐘 𝐏𝐀𝐑𝐀 𝐒𝐀 𝐌𝐆𝐀 𝐑𝐄𝐒𝐈𝐃𝐄𝐍𝐓𝐄 𝐍𝐆 𝐄𝐌𝐁𝐎. 𝐃𝐀𝐏𝐀𝐓 𝐈𝐓𝐎𝐍𝐆 𝐈𝐏𝐀𝐆𝐀𝐌𝐈𝐓 𝐒𝐀 𝐊𝐀𝐍𝐈𝐋𝐀</p>
+                </div>
+            </a>
+
+            <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+            data-bs-target="#marpost7">
+            <img class="card-img-top" src="March/marpost7.jpg" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐂𝐎𝐍𝐓𝐈𝐍𝐔𝐄𝐒 𝐓𝐎 𝐃𝐄𝐋𝐈𝐕𝐄𝐑 𝐐𝐔𝐀𝐋𝐈𝐓𝐘 𝐇𝐄𝐀𝐋𝐓𝐇 𝐒𝐄𝐑𝐕𝐈𝐂𝐄𝐒 𝐓𝐎 𝐄𝐌𝐁𝐎 𝐑𝐄𝐒𝐈𝐃𝐄𝐍𝐓𝐒 𝐀𝐒 𝐋𝐎𝐕𝐄 𝐂𝐀𝐑𝐀𝐕𝐀𝐍 𝐆𝐎𝐄𝐒 𝐓𝐎 𝐁𝐑𝐆𝐘. 𝐑𝐈𝐙𝐀𝐋</p>
+            </div>
+        </a>
+
+        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#marpost8">
+        <img class="card-img-top" src="March/marpost8.jpg" alt="Card image cap">
+        <div class="card-body">
+            <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐎𝐑𝐃𝐄𝐑𝐒 𝐓𝐄𝐌𝐏𝐎𝐑𝐀𝐑𝐘 𝐂𝐋𝐎𝐒𝐔𝐑𝐄 𝐎𝐅 𝐌𝐀𝐊𝐀𝐓𝐈 𝐏𝐀𝐑𝐊 𝐀𝐍𝐃 𝐆𝐀𝐑𝐃𝐄𝐍 𝐅𝐎𝐑 𝐎𝐏𝐄𝐑𝐀𝐓𝐈𝐍𝐆 𝐖𝐈𝐓𝐇𝐎𝐔𝐓 𝐏𝐑𝐎𝐏𝐄𝐑 𝐏𝐄𝐑𝐌𝐈𝐓𝐒</p>
+        </div>
+    </a>
+
+    <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+    data-bs-target="#marpost9">
+    <img class="card-img-top" src="March/marpost9.jpg" alt="Card image cap">
+    <div class="card-body">
+        <p class="card-text">Online Application for Freshmen Admission
+            (for Incoming First Year College A.Y 2024 - 2025)</p>
+    </div>
+</a>
+
+        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+        data-bs-target="#marpost10">
+        <img class="card-img-top" src="March/marpost10.jpg" alt="Card image cap">
+        <div class="card-body">
+         <p class="card-text">𝐌𝐞𝐜𝐡𝐚𝐧𝐢𝐜𝐚𝐥 𝐄𝐧𝐠𝐢𝐧𝐞𝐞𝐫𝐢𝐧𝐠 𝐋𝐢𝐜𝐞𝐧𝐬𝐮𝐫𝐞 𝐄𝐱𝐚𝐦𝐢𝐧𝐚𝐭𝐢𝐨𝐧 𝐏𝐚𝐬𝐬𝐞𝐫𝐬</p>
+            </div>
+                </a>
+
+
+                <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                data-bs-target="#marpost11">
+                <img class="card-img-top" src="March/marpost11.jpg" alt="Card image cap">
+                <div class="card-body">
+                 <p class="card-text">𝐌𝐚𝐬𝐭𝐞𝐫 𝐏𝐥𝐮𝐦𝐛𝐞𝐫 𝐋𝐢𝐜𝐞𝐧𝐬𝐮𝐫𝐞 𝐄𝐱𝐚𝐦𝐢𝐧𝐚𝐭𝐢𝐨𝐧 𝐁𝐨𝐚𝐫𝐝 𝐏𝐚𝐬𝐬𝐞𝐫𝐬</p>
+                    </div>
+                        </a>
+
+
+                        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                data-bs-target="#marpost12">
+                <img class="card-img-top" src="March/marpost12.jpg" alt="Card image cap">
+                <div class="card-body">
+                 <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐋𝐎𝐕𝐄 𝐂𝐀𝐑𝐀𝐕𝐀𝐍</p>
+                    </div>
+                        </a>
+
+
+                        
+                        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                data-bs-target="#marpost13">
+                <img class="card-img-top" src="March/marpost13.jpg" alt="Card image cap">
+                <div class="card-body">
+                 <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐋𝐀𝐔𝐍𝐂𝐇𝐄𝐒 𝐋𝐈𝐕𝐄𝐋𝐈𝐇𝐎𝐎𝐃 𝐀𝐍𝐃 𝐒𝐊𝐈𝐋𝐋𝐒 𝐂𝐀𝐑𝐀𝐕𝐀𝐍</p>
+                    </div>
+                        </a>
+
+                        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                data-bs-target="#marpost14">
+                <img class="card-img-top" src="March/marpost14.jpg" alt="Card image cap">
+                <div class="card-body">
+                 <p class="card-text">𝐏𝐞𝐬𝐭𝐢𝐜𝐢𝐝𝐞 𝐚𝐧𝐝 𝐅𝐞𝐫𝐭𝐢𝐥𝐢𝐳𝐞𝐫 𝐃𝐢𝐬𝐭𝐫𝐢𝐛𝐮𝐭𝐢𝐨𝐧 𝐟𝐨𝐫 𝐓𝐚𝐠𝐮𝐢𝐠 𝐌𝐞𝐥𝐨𝐧 𝐅𝐚𝐫𝐦𝐞𝐫𝐬</p>
+                    </div>
+                        </a>
+
+                        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                data-bs-target="#marpost15">
+                <img class="card-img-top" src="March/marpost15.jpg" alt="Card image cap">
+                <div class="card-body">
+                 <p class="card-text">𝐌𝐠𝐚 𝐩𝐚𝐦𝐩𝐮𝐛𝐥𝐢𝐤𝐨𝐧𝐠 𝐩𝐚𝐬𝐢𝐥𝐢𝐝𝐚𝐝 𝐬𝐚 𝐄𝐌𝐁𝐎, 𝐝𝐚𝐩𝐚𝐭 𝐢𝐩𝐚𝐠𝐚𝐦𝐢𝐭 𝐬𝐚 𝐦𝐠𝐚 𝐫𝐞𝐬𝐢𝐝𝐞𝐧𝐭𝐞</p>
+                    </div>
+                        </a>
+
+                        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                data-bs-target="#marpost16">
+                <img class="card-img-top" src="March/marpost16.jpg" alt="Card image cap">
+                <div class="card-body">
+                 <p class="card-text">𝐃𝐄𝐂𝐋𝐎𝐆𝐆𝐈𝐍𝐆 𝐀𝐍𝐃 𝐂𝐋𝐄𝐀𝐍𝐔𝐏 𝐃𝐑𝐈𝐕𝐄</p>
+                    </div>
+                        </a>
+
+
+                        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                        data-bs-target="#marpost17">
+                        <img class="card-img-top" src="March/marpost17.jpg" alt="Card image cap">
+                        <div class="card-body">
+                         <p class="card-text">𝐋𝐀 𝐍𝐈Ñ𝐀 𝐖𝐀𝐓𝐂𝐇</p>
+                            </div>
+                                </a>        
+                                
+                                <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                                data-bs-target="#marpost18">
+                                <img class="card-img-top" src="March/marpost18.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                 <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐂𝐎𝐍𝐓𝐈𝐍𝐔𝐄𝐒 𝐓𝐎 𝐃𝐄𝐋𝐈𝐕𝐄𝐑 𝐐𝐔𝐀𝐋𝐈𝐓𝐘 𝐇𝐄𝐀𝐋𝐓𝐇 𝐒𝐄𝐑𝐕𝐈𝐂𝐄𝐒 𝐓𝐎 𝐄𝐌𝐁𝐎 𝐑𝐄𝐒𝐈𝐃𝐄𝐍𝐓𝐒 𝐀𝐒 𝐋𝐎𝐕𝐄 𝐂𝐀𝐑𝐀𝐕𝐀𝐍 𝐆𝐎𝐄𝐒 𝐓𝐎 𝐁𝐑𝐆𝐘. 𝐏𝐈𝐓𝐎𝐆𝐎</p>
+                                    </div>
+                                        </a>  
+
+                                        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                                data-bs-target="#marpost19">
+                                <img class="card-img-top" src="March/marpost19.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                 <p class="card-text">𝐓𝐚𝐠𝐮𝐢𝐠 𝐇𝐞𝐚𝐥𝐭𝐡 𝐒𝐮𝐦𝐦𝐢𝐭: 𝐄𝐥𝐞𝐯𝐚𝐭𝐢𝐧𝐠 𝐖𝐞𝐥𝐥𝐧𝐞𝐬𝐬 𝐟𝐨𝐫 𝐒𝐭𝐫𝐞𝐞𝐭 𝐒𝐰𝐞𝐞𝐩𝐞𝐫𝐬</p>
+                                    </div>
+                                        </a> 
+
+                                        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                                data-bs-target="#marpost20">
+                                <img class="card-img-top" src="March/marpost20.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                 <p class="card-text">𝐂𝐑𝐈𝐌𝐈𝐍𝐎𝐋𝐎𝐆𝐈𝐒𝐓 𝐋𝐈𝐂𝐄𝐍𝐒𝐔𝐑𝐄 𝐄𝐗𝐀𝐌𝐈𝐍𝐀𝐓𝐈𝐎𝐍 𝐁𝐎𝐀𝐑𝐃 𝐏𝐀𝐒𝐒𝐄𝐑𝐒
+                                    𝐂𝐎𝐍𝐆𝐑𝐀𝐓𝐔𝐋𝐀𝐓𝐈𝐎𝐍𝐒!</p>
+                                    </div>
+                                        </a> 
+
+                                        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                                        data-bs-target="#marpost21">
+                                        <img class="card-img-top" src="March/marpost21.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                         <p class="card-text">𝐓𝐚𝐠𝐮𝐢𝐠 𝐂𝐢𝐭𝐲 𝐂𝐞𝐥𝐞𝐛𝐫𝐚𝐭𝐞𝐬 𝐖𝐨𝐦𝐞𝐧 𝐄𝐦𝐩𝐨𝐰𝐞𝐫𝐦𝐞𝐧𝐭 𝐨𝐧 𝐈𝐧𝐭𝐞𝐫𝐧𝐚𝐭𝐢𝐨𝐧𝐚𝐥 𝐖𝐨𝐦𝐞𝐧'𝐬 𝐃𝐚𝐲!</p>
+                                            </div>
+                                                </a> 
+
+                                                <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                                        data-bs-target="#marpost22">
+                                        <img class="card-img-top" src="March/marpost22.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                         <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐋𝐎𝐕𝐄 𝐂𝐀𝐑𝐀𝐕𝐀𝐍</p>
+                                            </div>
+                                                </a> 
+
+                                                <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                                        data-bs-target="#marpost23">
+                                        <img class="card-img-top" src="March/marpost23.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                         <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐋𝐎𝐕𝐄 𝐂𝐀𝐑𝐀𝐕𝐀𝐍</p>
+                                            </div>
+                                                </a> 
+
+                                                <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                                        data-bs-target="#marpost24">
+                                        <img class="card-img-top" src="March/marpost24.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                         <p class="card-text">𝐑𝐨𝐮𝐭𝐢𝐧𝐞 𝐈𝐦𝐦𝐮𝐧𝐢𝐳𝐚𝐭𝐢𝐨𝐧 𝐏𝐚𝐫𝐚 𝐬𝐚 𝐄𝐌𝐁𝐎 𝐁𝐚𝐫𝐚𝐧𝐠𝐚𝐲s</p>
+                                            </div>
+                                                </a> 
+
+
+                                                <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                                        data-bs-target="#marpost25">
+                                        <img class="card-img-top" src="March/marpost25.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                         <p class="card-text">𝐓𝐚𝐠𝐮𝐢𝐠 𝐕𝐨𝐰𝐬 𝐭𝐨 𝐄𝐧𝐝 𝐕𝐀𝐖</p>
+                                            </div>
+                                                </a>
+
+
+                                                <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                                        data-bs-target="#marpost26">
+                                        <img class="card-img-top" src="March/marpost26.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                         <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐑𝐎𝐋𝐋𝐒 𝐎𝐔𝐓 𝐑𝐎𝐔𝐓𝐈𝐍𝐄 𝐈𝐌𝐌𝐔𝐍𝐈𝐙𝐀𝐓𝐈𝐎𝐍 𝐅𝐎𝐑 𝐁𝐀𝐁𝐈𝐄𝐒 𝟔 𝐖𝐄𝐄𝐊𝐒 𝐓𝐎 𝟏𝟑 𝐌𝐎𝐍𝐓𝐇𝐒 𝐈𝐍 𝐄𝐌𝐁𝐎 𝐁𝐀𝐑𝐀𝐍𝐆𝐀𝐘𝐒</p>
+                                            </div>
+                                                </a>
+
+                                                <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                                        data-bs-target="#marpost27">
+                                        <img class="card-img-top" src="March/marpost27.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                         <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐋𝐎𝐕𝐄 𝐂𝐀𝐑𝐀𝐕𝐀𝐍 - 𝐁𝐑𝐆𝐘. 𝐍𝐎𝐑𝐓𝐇 𝐒𝐈𝐆𝐍𝐀𝐋 𝐀𝐓 𝐁𝐑𝐆𝐘. 𝐅𝐎𝐑𝐓 𝐁𝐎𝐍𝐈𝐅𝐀𝐂𝐈𝐎</p>
+                                            </div>
+                                                </a>
+
+                                                <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                                        data-bs-target="#marpost28">
+                                        <img class="card-img-top" src="March/marpost28.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                         <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐂𝐎𝐍𝐓𝐈𝐍𝐔𝐄𝐒 𝐓𝐎 𝐃𝐄𝐋𝐈𝐕𝐄𝐑 𝐐𝐔𝐀𝐋𝐈𝐓𝐘 𝐇𝐄𝐀𝐋𝐓𝐇 𝐒𝐄𝐑𝐕𝐈𝐂𝐄𝐒 𝐓𝐎 𝐄𝐌𝐁𝐎 𝐑𝐄𝐒𝐈𝐃𝐄𝐍𝐓𝐒 𝐀𝐒 𝐋𝐎𝐕𝐄 𝐂𝐀𝐑𝐀𝐕𝐀𝐍 𝐆𝐎𝐄𝐒 𝐓𝐎 𝐁𝐑𝐆𝐘. 𝐏𝐄𝐌𝐁𝐎</p>
+                                            </div>
+                                                </a>
+
+                                                <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                                        data-bs-target="#marpost29">
+                                        <img class="card-img-top" src="March/marpost29.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                         <p class="card-text">𝐃𝐄𝐂𝐋𝐎𝐆𝐆𝐈𝐍𝐆 𝐀𝐍𝐃 𝐂𝐋𝐄𝐀𝐍𝐔𝐏 𝐃𝐑𝐈𝐕𝐄</p>
+                                            </div>
+                                                </a>
+
+                                                <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                                                data-bs-target="#marpost30">
+                                                <img class="card-img-top" src="March/marpost30.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                 <p class="card-text">𝐋𝐀𝐍𝐈 𝐒𝐂𝐇𝐎𝐋𝐀𝐑𝐒𝐇𝐈𝐏 𝐃𝐈𝐒𝐓𝐑𝐈𝐁𝐔𝐓𝐈𝐎𝐍 𝐅𝐎𝐑 𝐄𝐌𝐁𝐎 𝐒𝐂𝐇𝐎𝐋𝐀𝐑𝐒</p>
+                                                    </div>
+                                                        </a>
+
+                                                        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                                                data-bs-target="#marpost31">
+                                                <img class="card-img-top" src="March/marpost31.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                 <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐋𝐎𝐕𝐄 𝐂𝐀𝐑𝐀𝐕𝐀𝐍</p>
+                                                    </div>
+                                                        </a>
+
+                                                        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                                                data-bs-target="#marpost32">
+                                                <img class="card-img-top" src="March/marpost32.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                 <p class="card-text">𝐒𝐔𝐒𝐓𝐀𝐈𝐍𝐈𝐍𝐆 𝐖𝐎𝐌𝐄𝐍'𝐒 𝐈𝐍𝐍𝐎𝐕𝐀𝐓𝐈𝐎𝐍 𝐀𝐍𝐃 𝐅𝐈𝐍𝐀𝐍𝐂𝐈𝐀𝐋 𝐓𝐑𝐀𝐍𝐒𝐅𝐎𝐑𝐌𝐀𝐓𝐈𝐎𝐍 (𝐒𝐖𝐈𝐅𝐓)</p>
+                                                    </div>
+                                                        </a>
+
+
+
+                                                        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                                                        data-bs-target="#marpost33">
+                                                        <img class="card-img-top" src="March/marpost33.jpg" alt="Card image cap">
+                                                        <div class="card-body">
+                                                         <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐓𝐔𝐑𝐍𝐒 𝐎𝐕𝐄𝐑 𝐒𝐓𝐀𝐓𝐄-𝐎𝐅-𝐓𝐇𝐄-𝐀𝐑𝐓 𝐅𝐈𝐑𝐄𝐅𝐈𝐆𝐇𝐓𝐈𝐍𝐆 𝐕𝐄𝐇𝐈𝐂𝐋𝐄𝐒, 𝐄𝐐𝐔𝐈𝐏𝐌𝐄𝐍𝐓 𝐓𝐎 𝐁𝐅𝐏-𝐓𝐀𝐆𝐔𝐈𝐆</p>
+                                                            </div>
+                                                                </a>
+
+                                                                <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                                                        data-bs-target="#marpost34">
+                                                        <img class="card-img-top" src="March/marpost34.jpg" alt="Card image cap">
+                                                        <div class="card-body">
+                                                         <p class="card-text">𝐖𝐎𝐑𝐋𝐃 𝐓𝐁 𝐃𝐀𝐘 𝐂𝐄𝐋𝐄𝐁𝐑𝐀𝐓𝐈𝐎𝐍</p>
+                                                            </div>
+                                                                </a>
+
+                                                                <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                                                        data-bs-target="#marpost35">
+                                                        <img class="card-img-top" src="March/marpost35.jpg" alt="Card image cap">
+                                                        <div class="card-body">
+                                                         <p class="card-text">𝐀𝐭𝐢𝐧𝐠 𝐃𝐢𝐛𝐝𝐢𝐛𝐢𝐧 𝐏𝐫𝐨𝐠𝐫𝐚𝐦 𝐓𝐫𝐚𝐢𝐧𝐢𝐧𝐠 𝐨𝐧 𝐂𝐥𝐢𝐧𝐢𝐜𝐚𝐥 𝐁𝐫𝐞𝐚𝐬𝐭 𝐄𝐱𝐚𝐦𝐢𝐧𝐚𝐭𝐢𝐨𝐧 𝐨𝐟 𝐁𝐚𝐫𝐚𝐧𝐠𝐚𝐲 𝐇𝐞𝐚𝐥𝐭𝐡 𝐖𝐨𝐫𝐤𝐞𝐫𝐬 𝐚𝐧𝐝 𝐓𝐮𝐫𝐧 𝐎𝐯𝐞𝐫 𝐨𝐟 𝐖𝐢𝐠𝐬 𝐟𝐫𝐨𝐦 𝐭𝐡𝐞 “𝐁𝐮𝐡𝐨𝐤 𝐊𝐨, 𝐬𝐇𝐀𝐈𝐑 𝐊𝐨 𝐄𝐯𝐞𝐧𝐭</p>
+                                                            </div>
+                                                                </a>
+
+
+                                                                <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                                                        data-bs-target="#marpost36">
+                                                        <img class="card-img-top" src="March/marpost36.jpg" alt="Card image cap">
+                                                        <div class="card-body">
+                                                         <p class="card-text">𝐄𝐀𝐑𝐓𝐇 𝐇𝐎𝐔𝐑 𝟐𝟎𝟐𝟒</p>
+                                                            </div>
+                                                                </a>
+
+                                                                <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                                                                data-bs-target="#marpost37">
+                                                                <img class="card-img-top" src="March/marpost37.jpg" alt="Card image cap">
+                                                                <div class="card-body">
+                                                                 <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐋𝐎𝐕𝐄 𝐂𝐀𝐑𝐀𝐕𝐀𝐍</p>
+                                                                    </div>
+                                                                        </a>
+
+                                                                        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                                                                data-bs-target="#marpost38">
+                                                                <img class="card-img-top" src="March/marpost38.jpg" alt="Card image cap">
+                                                                <div class="card-body">
+                                                                 <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐂𝐎𝐍𝐓𝐈𝐍𝐔𝐄𝐒 𝐓𝐎 𝐃𝐄𝐋𝐈𝐕𝐄𝐑 𝐐𝐔𝐀𝐋𝐈𝐓𝐘 𝐇𝐄𝐀𝐋𝐓𝐇 𝐒𝐄𝐑𝐕𝐈𝐂𝐄𝐒 𝐓𝐎 𝐄𝐌𝐁𝐎 𝐑𝐄𝐒𝐈𝐃𝐄𝐍𝐓𝐒 𝐀𝐒 𝐋𝐎𝐕𝐄 𝐂𝐀𝐑𝐀𝐕𝐀𝐍 𝐆𝐎𝐄𝐒 𝐓𝐎 𝐁𝐑𝐆𝐘. 𝐂𝐎𝐌𝐄𝐌𝐁𝐎</p>
+                                                                    </div>
+                                                                        </a>
+
+                                                                        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                                                                data-bs-target="#marpost39">
+                                                                <img class="card-img-top" src="March/marpost39.jpg" alt="Card image cap">
+                                                                <div class="card-body">
+                                                                 <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐇𝐎𝐋𝐃𝐒 𝐂𝐋𝐄𝐀𝐍𝐔𝐏 𝐃𝐑𝐈𝐕𝐄 𝐓𝐎 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐄𝐀𝐑𝐓𝐇 𝐇𝐎𝐔𝐑 𝟐𝟎𝟐𝟒</p>
+                                                                    </div>
+                                                                        </a>
+
+
+                                                                        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                                                                data-bs-target="#marpost40">
+                                                                <img class="card-img-top" src="March/marpost40.jpg" alt="Card image cap">
+                                                                <div class="card-body">
+                                                                 <p class="card-text">𝐓𝐚𝐠𝐮𝐢𝐠𝐞𝐧̃𝐨, 𝐦𝐚𝐠-𝐢𝐧𝐠𝐚𝐭 𝐬𝐚 𝐏𝐞𝐫𝐭𝐮𝐬𝐬𝐢𝐬</p>
+                                                                    </div>
+                                                                        </a>
+
+
+                                                                        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                                                                data-bs-target="#marpost41">
+                                                                <img class="card-img-top" src="March/marpost41.jpg" alt="Card image cap">
+                                                                <div class="card-body">
+                                                                 <p class="card-text">Scholarship Announcement No. 2024-03-25 (LANI):</p>
+                                                                    </div>
+                                                                        </a>
+
+
+                                                                        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                                                                data-bs-target="#marpost42">
+                                                                <img class="card-img-top" src="March/marpost41.jpg" alt="Card image cap">
+                                                                <div class="card-body">
+                                                                 <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐋𝐎𝐕𝐄 𝐂𝐀𝐑𝐀𝐕𝐀𝐍</p>
+                                                                    </div>
+                                                                        </a>
+
+                                                                        <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                                                                        data-bs-target="#marpost43">
+                                                                        <img class="card-img-top" src="March/marpost43.jpg" alt="Card image cap">
+                                                                        <div class="card-body">
+                                                                         <p class="card-text">𝐈𝐰𝐚𝐬𝐚𝐧 𝐚𝐧𝐠 𝐇𝐞𝐚𝐭 𝐒𝐭𝐫𝐨𝐤𝐞</p>
+                                                                            </div>
+                                                                                </a>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!--  Columns 4-->
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed text-decoration-none dropdown-toggle" type="button"
+                            data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                            aria-controls="collapseFour">
+                            April
+                        </button>
+                    </h2>
+                </div>
+
+
+
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div class="card" style="width: 18rem;">
+                            <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                            data-bs-target="#aprpost1">
+                            <img class="card-img-top" src="April/aprpost1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                             <p class="card-text">𝐂𝐄𝐍𝐓𝐄𝐑 𝐅𝐎𝐑 𝐓𝐇𝐄 𝐄𝐋𝐃𝐄𝐑𝐋𝐘 𝟓𝐓𝐇 𝐀𝐍𝐍𝐈𝐕𝐄𝐑𝐒𝐀𝐑𝐘</p>
+                                </div>
+                                    </a>
+
+
+
+                                    <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                            data-bs-target="#aprpost2">
+                            <img class="card-img-top" src="April/aprpost2.jpg" alt="Card image cap">
+                            <div class="card-body">
+                             <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐋𝐎𝐕𝐄 𝐂𝐀𝐑𝐀𝐕𝐀𝐍</p>
+                                </div>
+                                    </a>
+
+
+                                    <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                            data-bs-target="#aprpost3">
+                            <img class="card-img-top" src="April/aprpost3.jpg" alt="Card image cap">
+                            <div class="card-body">
+                             <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐋𝐎𝐕𝐄 𝐂𝐀𝐑𝐀𝐕𝐀𝐍</p>
+                                </div>
+                                    </a>
+
+                                    <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                            data-bs-target="#aprpost4">
+                            <img class="card-img-top" src="April/aprpost4.jpg" alt="Card image cap">
+                            <div class="card-body">
+                             <p class="card-text">𝐀𝐃𝐕𝐈𝐒𝐎𝐑𝐘: 𝐀𝐒𝐘𝐍𝐂𝐇𝐑𝐎𝐍𝐎𝐔𝐒 𝐂𝐋𝐀𝐒𝐒𝐄𝐒/𝐃𝐈𝐒𝐓𝐀𝐍𝐂𝐄 𝐋𝐄𝐀𝐑𝐍𝐈𝐍𝐆 𝐅𝐎𝐑 𝐀𝐋𝐋 𝐏𝐔𝐁𝐋𝐈𝐂 𝐒𝐂𝐇𝐎𝐎𝐋𝐒 𝐈𝐍 𝐓𝐇𝐄 𝐂𝐎𝐔𝐍𝐓𝐑𝐘 𝐎𝐍 𝐀𝐏𝐑𝐈𝐋 𝟖, 𝟐𝟎𝟐𝟒, 𝐌𝐎𝐍𝐃𝐀𝐘</p>
+                                </div>
+                                    </a>
+
+
+                                    <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                            data-bs-target="#aprpost5">
+                            <img class="card-img-top" src="April/aprpost5.jpg" alt="Card image cap">
+                            <div class="card-body">
+                             <p class="card-text">𝐀𝐍𝐍𝐎𝐔𝐍𝐂𝐄𝐌𝐄𝐍𝐓 </p>
+                                </div>
+                                    </a>
+
+
+                                    <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                            data-bs-target="#aprpost6">
+                            <img class="card-img-top" src="April/aprpost6.jpg" alt="Card image cap">
+                            <div class="card-body">
+                             <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐋𝐎𝐕𝐄 𝐂𝐀𝐑𝐀𝐕𝐀𝐍</p>
+                                </div>
+                                    </a>
+
+
+                                    <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                            data-bs-target="#aprpost7">
+                            <img class="card-img-top" src="April/aprpost7.jpg" alt="Card image cap">
+                            <div class="card-body">
+                             <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐋𝐎𝐕𝐄 𝐂𝐀𝐑𝐀𝐕𝐀𝐍</p>
+                                </div>
+                                    </a>
+
+                                    <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                                    data-bs-target="#aprpost8">
+                                    <img class="card-img-top" src="April/aprpost8.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                     <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐋𝐎𝐕𝐄 𝐂𝐀𝐑𝐀𝐕𝐀𝐍</p>
+                                        </div>
+                                            </a>
+
+                                            <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                                    data-bs-target="#aprpost9">
+                                    <img class="card-img-top" src="April/aprpost9.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                     <p class="card-text">𝐑𝐄-𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐘𝐎𝐔𝐑 𝐃𝐓𝐈 𝐁𝐔𝐒𝐈𝐍𝐄𝐒𝐒 𝐍𝐀𝐌𝐄 𝐑𝐄𝐆𝐈𝐒𝐓𝐑𝐀𝐓𝐈𝐎𝐍 𝐂𝐄𝐑𝐓𝐈𝐅𝐈𝐂𝐀𝐓𝐄</p>
+                                        </div>
+                                            </a>
+
+
+                                            <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                                    data-bs-target="#aprpost10">
+                                    <img class="card-img-top" src="April/aprpost10.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                     <p class="card-text">𝐓𝐀𝐆𝐔𝐈𝐆 𝐋𝐎𝐕𝐄 𝐂𝐀𝐑𝐀𝐕𝐀𝐍</p>
+                                        </div>
+                                            </a>
+
+
+                                            <a class="card text-decoration-none" style="width: 18rem;" data-bs-toggle="modal"
+                                    data-bs-target="#aprpost10">
+                                    <img class="card-img-top" src="April/aprpost11.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                     <p class="card-text">𝐓𝐚𝐠𝐮𝐢𝐠 𝐋𝐚𝐮𝐧𝐜𝐡𝐞𝐬 𝐂𝐚𝐦𝐩𝐚𝐢𝐠𝐧 𝐨𝐧 𝐁𝐢𝐯𝐚𝐥𝐞𝐧𝐭 𝐎𝐫𝐚𝐥 𝐏𝐨𝐥𝐢𝐨 𝐕𝐚𝐜𝐜𝐢𝐧𝐞 𝐂𝐚𝐭𝐜𝐡-𝐔𝐩 𝐚𝐧𝐝 𝐒𝐮𝐩𝐩𝐥𝐞𝐦𝐞𝐧𝐭𝐚𝐥 𝐈𝐦𝐦𝐮𝐧𝐢𝐳𝐚𝐭𝐢𝐨𝐧 𝐀𝐜𝐭𝐢𝐯𝐢𝐭𝐲 𝐰𝐢𝐭𝐡 𝐒𝐩𝐞𝐜𝐢𝐚𝐥 𝐅𝐨𝐜𝐮𝐬 𝐨𝐧 𝐅𝐫𝐨𝐧𝐭𝐥𝐢𝐧𝐞𝐫𝐬</p>
+                                        </div>
+                                            </a>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>       
+        
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../assets/images/favicon/favicon.ico" type="image/x-icon">
+    <title>Announcement Slider</title>
+    
+    <link rel="stylesheet" href="announcement.css">
+    <style>
+        body {
+            background-image: url('cityhall.jpg');
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            margin: 0; /* Reset default margin */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slider-container {
+            width: 80%;
+            max-width: 1200px;
+            overflow: hidden;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+    </style>
+</head>
+<body>  
+    <div class="container">
+        <div class="timeline">
+          <ul>
+            <li>
+              <div class="timeline-content">
+                <h3 class="date">20th may, 2010</h3>
+                <h1>Heading 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-content">
+                <h3 class="date">20th may, 2010</h3>
+                <h1>Heading 2</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-content">
+                <h3 class="date">20th may, 2010</h3>
+                <h1>Heading 3</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-content">
+                <h3 class="date">20th may, 2010</h3>
+                <h1>Heading 4</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    <script src="announcement.js"></script>
+</body>
+</html>

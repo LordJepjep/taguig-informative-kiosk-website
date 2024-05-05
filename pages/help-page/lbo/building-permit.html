@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../../css/help-page.css">
+    <link rel="stylesheet" href="../../../sass/main.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/4226f23083.js" crossorigin="anonymous"></script>
+    <script src="../../../assets/js/grid.js"></script>
+    <title>Taguig Information Kiosk</title>
+</head>
+<body>
+    <div class="navbar bg-primary navbar-expand-lg ">
+        <button onclick="history.back()" class="justify-content-start bg-primary border-0 px-5 text-white">
+            <i class="fa-solid fa-chevron-left fa-3x"></i>
+        </button>
+        <button onclick="history.forward()" class="justify-content-start bg-primary border-0 px-5 text-white">
+            <i class="fa-solid fa-chevron-right fa-3x"></i>
+        </button>
+        <div class="container-fluid text-white justify-content-between">
+            <a href="../../../index.html" class="navbar-brand text-reset py-3 justify-content-start">
+                <div class="row">
+                    <div class="col-auto">
+                        <img src="../../../assets/images/logo.png" alt="Logo" class="d-inline-block align-text-top w-25">
+                    </div>
+                </div>
+            </a>
+
+            <div class="col-xl-auto row time justify-content-end fs-2">
+                <span id="real-time" class="text-end"></span>
+                <span id="real-date" class="text-end"></span>
+            </div> 
+        </div>
+        <div class="dropstart px-3">
+            <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-bars fa-3x"></i>
+            </a>
+          
+            <ul class="dropdown-menu fs-4 bg-accent p-0 text-primary">
+              <li><a class="dropdown-item py-3 text-reset fw-bold" href="../../../index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+              <li><a class="dropdown-item py-3 text-reset fw-bold" href="../../announcement/announcement.html"><i class="fa-solid fa-bullhorn"></i> Annoucements</a></li>
+              <li><a class="dropdown-item py-3 text-reset fw-bold" href="../../event/event.html"><i class="fa-solid fa-calendar-days"></i> Events</a></li>
+              <li><a class="dropdown-item py-3 text-reset fw-bold" href="../help-page.html"><i class="fa-solid fa-circle-question"></i> Help Desk</a></li>
+              <li><a class="dropdown-item py-3 text-reset fw-bold" href="../../map/City Hall Map Directory V2.html"><i class="fa-solid fa-map-location"></i> Map</a></li>
+              <li><a class="dropdown-item py-3 text-reset fw-bold" href="../help-page/help-page-offices.html"><i
+                class="fa-solid fa-user-group"></i> Citizen's Charter</a></li>            </ul>
+        </div>
+    </div>
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="px-3 py-1 fs-3 fw-medium bg-altlight">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="../help-page.html">Help Desk</a></li>
+          <li class="breadcrumb-item"><a href="../help-page-offices.html">Offices</a></li>
+          <li class="breadcrumb-item"><a href="../help-page-lbo.html">LBO</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Issuance of Building Permit</li>
+        </ol>
+    </nav>
+    <section class="banner-container">
+        <div class="container-lg">
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-md-start">
+                    <h1 class="text-secondary">
+                        <div class="display-1 text-center p-3 fw-bold">Citizen's Charter</div>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid w-75 my-5">
+        <div class="row justify-content-center p-5">
+            <h1 class="display-lg-2 display-xl-3 fw-bold text-uppercase py-4 px-3 bg-secondary text-white">Issuance of Building Permit</h2>
+            
+            <h2 class="py-3 bg-primary text-white"><i class="fa-solid fa-location-dot px-2"></i> Where:</h2>
+            <ul class="list-group list-group-flush mb-5 fs-3">
+                <li class="list-group-item"><i class="fa-solid fa-building"></i> Local Building Office or Office of the Building Official (City Hall)</li>
+            </ul>
+            
+            <h2 class="py-3 bg-primary text-white"><i class="fa-solid fa-list-check px-2"></i> Requirements</h2>
+            <div class="list-group list-group-flush gap-1 fs-4 mb-5">
+                <button class="list-group-item btn btn-primary text-start dropdown-toggle fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#amendments" aria-expanded="false" aria-controls="amendments">
+                    <i class="fa-solid fa-list-ul"></i>
+                    <span>For New Construction:</span>
+                </button>
+                <div class="list-group list-group-flush gap-1 ps-3 collapse" id="amendments">
+                    <div class="list-group-item text-star fs-4">
+                        <i class="fa-regular fa-square-check"></i> 
+                        <span>
+                            Barangay Clearance/ Certification (For construction), Association Certificate, Consent of Owner, SPA.
+                            </span>
+                    </div>
+                    <div class="list-group-item text-star fs-4">
+                        <i class="fa-regular fa-square-check"></i> 
+                        <span>
+                            Transfer Certificate of Title, Tax Declaration, Deed of
+                            Absolute Sale, Waive of Rights, Contract of Lease, DENR
+                            Entry Pass/ Stub
+                        </span>
+                    </div>
+                    <div class="list-group-item text-star fs-4">
+                        <i class="fa-regular fa-square-check"></i> 
+                        <span>
+                            Contract/ Agreement (should include contract price) with
+                            general contractor
+                        </span>
+                    </div>
+                    <div class="list-group-item text-star fs-4">
+                        <i class="fa-regular fa-square-check"></i> 
+                        <span>
+                            Contract/ Agreement (should include contract price) with
+                            sub-contractor for Electrical and Mechanical, Sanitary/
+                            Plumbing, Elevators, and all services required by the
+                            developer
+                        </span>
+                    </div>
+                    <button class="list-group-item btn btn-primary text-start dropdown-toggle fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#letterAuthority" aria-expanded="false" aria-controls="letterAuthority">
+                        <i class="fa-regular fa-square-check"></i> 
+                        <span>Fully Accomplished Application Forms:</span>
+                    </button>
+                    <div class="collapse card card-body" id="letterAuthority">
+                        <ul class="list-group-numbered">
+                            <li class="list-group-item">Building Permit Form</li>
+                            <li class="list-group-item">Electrical</li>
+                            <li class="list-group-item">Sanitary/ Plumbing</li>
+                            <li class="list-group-item">Mechanical</li>
+                            <li class="list-group-item">Fencing</li>
+                            <li class="list-group-item">Excavation</li>
+                            <li class="list-group-item">Demolition</li>
+                        </ul>
+                    </div>
+                    <button class="list-group-item btn btn-primary text-start dropdown-toggle fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#plans" aria-expanded="false" aria-controls="plans">
+                        <i class="fa-regular fa-square-check"></i> 
+                        <span>3 Sets of Plans and Specification</span>
+                    </button>
+                    <div class="collapse card card-body" id="plans">
+                        <ul class="list-group-numbered">
+                            <li class="list-group-item">Locational plan, Site Development, Vicinity Map</li>
+                            <li class="list-group-item">Architectural Plans</li>
+                            <li class="list-group-item">Structural Plans</li>
+                            <li class="list-group-item">Sanitary / Plumbing Plans</li>
+                            <li class="list-group-item">Electrical Plans</li>
+                            <li class="list-group-item">Mechanical Plans / Fire Protection Plan (if Applicable)</li>
+                            <li class="list-group-item">Fire Suppression Plan / Gas Line Plan (for Restaurant)</li>
+                        </ul>
+                    </div>
+                    <button class="list-group-item btn btn-primary text-start dropdown-toggle fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#plans2" aria-expanded="false" aria-controls="plans2">
+                        <i class="fa-regular fa-square-check"></i> 
+                        <span>3 Sets of:</span>
+                    </button>
+                    <div class="collapse card card-body" id="plans2">
+                        <ul class="list-group-numbered">
+                            <li class="list-group-item">Structural Design and Computations</li>
+                            <li class="list-group-item">Bill of Material / Cost Estimate</li>
+                            <li class="list-group-item">Specification</li>
+                            <li class="list-group-item">Soil Boring Test</li>
+                        </ul>
+                    </div>
+                    <div class="list-group-item text-star fs-4">
+                        <i class="fa-regular fa-square-check"></i> 
+                        <span>
+                            (3) Large Envelope with Folder, Fastener, (1) Logbook, and (1) Large Expandable Plastic.
+                        </span>
+                    </div>
+                    <button class="list-group-item btn btn-primary text-start dropdown-toggle fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#clearance" aria-expanded="false" aria-controls="clearance">
+                        <i class="fa-regular fa-square-check"></i> 
+                        <span> Clearances from other agencies</span>
+                    </button>
+                    <div class="collapse card card-body" id="clearance">
+                        <ul class="list-group-numbered">
+                            <li class="list-group-item">Fire Safety Certificate Checklist and Fire Safety Evaluation Clearance 
+                                (to be endorsed by LBO if all requirements are completed)</li>
+                            <li class="list-group-item">Locational Clearance (City Planning & Development Office)</li>
+                            <li class="list-group-item">Civil Aviation Authority of the Philippines Clearance</li>
+                            <li class="list-group-item">DENR Environmental Compliance Certificate</li>
+                            <li class="list-group-item">LLDA - Laguna Lake Development Certificate</li>
+                            <li class="list-group-item">Contractor's Tax Receipt / City Tax</li>
+                            <li class="list-group-item">Construction Safety and Health Program (DOLE)</li>
+                            <li class="list-group-item">PCAB License</li>
+                            <li class="list-group-item">Home Owners Association Clearance (Duly registered)</li>
+                        </ul>
+                    </div>
+                    <div class="list-group-item text-star fs-4">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        Notes:
+                        <ul class="list-group-numbered">
+                            <li class="list-group-item">All application forms, plans, specification, design and
+                                computation, bill of materials should be sign and
+                                sealed by a duly licensed CE, ARCH, SE, PEE, PME,
+                                and Master Electrician.</li>
+                            <li class="list-group-item">In case of large
+                                -scale development, subdivision, secure
+                                Development Permit from Sangguniang Panglungsod.</li>
+                            <li class="list-group-item">Photocopy of PRC ID & PTR, with original signed &
+                                sealed. (2 COPIES)</li>
+                            <li class="list-group-item">IAPOA of Architect. (2 COPIES)</li>
+                        </ul>
+                    </div>
+                </div>      
+                <button class="list-group-item btn btn-primary text-start dropdown-toggle fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#renovation" aria-expanded="false" aria-controls="renovation">
+                    <i class="fa-solid fa-list-ul"></i>
+                    <span>For Fit-out/ Renovation:</span>
+                </button>
+                <div class="list-group list-group-flush gap-1 ps-3 collapse" id="renovation">
+                    <div class="list-group-item text-star fs-4">
+                        <i class="fa-regular fa-square-check"></i> 
+                        <span>
+                            Barangay Clearance/ Certification (For construction), Association Certificate, Consent of Owner, SPA.
+                            </span>
+                    </div>
+                    <div class="list-group-item text-star fs-4">
+                        <i class="fa-regular fa-square-check"></i> 
+                        <span>
+                            Contract of Lease, Condominium Certificate of Title, or Deed of Absolute Sale
+                        </span>
+                    </div>
+                    <button class="list-group-item btn btn-primary text-start dropdown-toggle fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#letterAuthority" aria-expanded="false" aria-controls="forms">
+                        <i class="fa-regular fa-square-check"></i> 
+                        <span>Fully Accomplished Application Forms:</span>
+                    </button>
+                    <div class="collapse card card-body" id="forms">
+                        <ul class="list-group-numbered">
+                            <li class="list-group-item">Building</li>
+                            <li class="list-group-item">Electrical</li>
+                            <li class="list-group-item">Sanitary/ Plumbing</li>
+                            <li class="list-group-item">Mechanical</li>
+                        </ul>
+                    </div>
+                    <button class="list-group-item btn btn-primary text-start dropdown-toggle fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#plans4" aria-expanded="false" aria-controls="plans4">
+                        <i class="fa-regular fa-square-check"></i> 
+                        <span>3 Sets of Plans and Specification</span>
+                    </button>
+                    <div class="collapse card card-body" id="plans4">
+                        <ul class="list-group-numbered">
+                            <li class="list-group-item">Locational plan, Site Development, Vicinity Map</li>
+                            <li class="list-group-item">Architectural Plans</li>
+                            <li class="list-group-item">Structural Plans</li>
+                            <li class="list-group-item">Sanitary / Plumbing Plans</li>
+                            <li class="list-group-item">Electrical Plans</li>
+                            <li class="list-group-item">Mechanical Plans / Fire Protection Plan (if Applicable)</li>
+                            <li class="list-group-item">Fire Suppression Plan / Gas Line Plan (for Restaurant)</li>
+                        </ul>
+                    </div>
+                    <button class="list-group-item btn btn-primary text-start dropdown-toggle fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#plans3" aria-expanded="false" aria-controls="plans3">
+                        <i class="fa-regular fa-square-check"></i> 
+                        <span>3 Sets of:</span>
+                    </button>
+                    <div class="collapse card card-body" id="plans3">
+                        <ul class="list-group-numbered">
+                            <li class="list-group-item">Bill of Material / Cost Estimate</li>
+                            <li class="list-group-item">Specification</li>
+                        </ul>
+                    </div>
+                    <div class="list-group-item text-star fs-4">
+                        <i class="fa-regular fa-square-check"></i> 
+                        <span>
+                            (3) Large Envelope with Folder, Fastener, (1) Logbook, and (1) Large Expandable Plastic.
+                        </span>
+                    </div>
+                    <button class="list-group-item btn btn-primary text-start dropdown-toggle fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#clearance2" aria-expanded="false" aria-controls="clearance2">
+                        <i class="fa-regular fa-square-check"></i> 
+                        <span> Clearances from other agencies</span>
+                    </button>
+                    <div class="collapse card card-body" id="clearance2">
+                        <ul class="list-group-numbered">
+                            <li class="list-group-item">Fire Safety Certificate Checklist and Fire Safety Evaluation Clearance 
+                                (to be endorsed by LBO if all requirements are completed)</li>
+                            <li class="list-group-item">Contractor's Tax Receipt / City Tax</li>
+                            <li class="list-group-item">Construction Safety and Health Program (DOLE)</li>
+                            <li class="list-group-item">PCAB License</li>
+                            <li class="list-group-item">Picture of Location / Construction (Colored)</li>
+                        </ul>
+                    </div>
+                    <div class="list-group-item text-star fs-4">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        Notes:
+                        <ul class="list-group-numbered">
+                            <li class="list-group-item">All application forms, plans, specification, design and
+                                computation, bill of materials should be sign and
+                                sealed by a duly licensed CE, ARCH, SE, PEE, PME,
+                                and Master Electrician.</li>
+                            <li class="list-group-item">Photocopy of PRC ID & PTR, with original signed &
+                                sealed. (2 COPIES)</li>
+                            <li class="list-group-item">IAPOA of Architect. (2 COPIES)</li>
+                        </ul>
+                    </div>
+                </div>  
+            </div>
+            <h2 class="py-3 px-2 bg-primary text-white">Steps</h2>
+            <div class="list-group-numbered list-group-flush fs-4">
+                <div class="list-group-item text-star fs-4 my-3">
+                    <span>
+                        Submit duly accomplished application forms, plans and documents indicated on the checklist and get claim stub
+                    </span>
+                </div>
+                <div class="list-group-item text-star fs-4 my-3">
+                    <span>
+                        Return on the date indicated in
+                        the stub and inquire on the status
+                        of the application in the OBO (LBO). If the
+                        application is ready for payment,
+                        pay the required fees; otherwise if
+                        the application is for compliance,
+                        get the documents, comply with
+                        the requirements, and go back to
+                        step 1.
+                    </span>
+                </div>
+                <div class="list-group-item text-star fs-4 my-3">
+                    <span>
+                        Present and submit the <b>Official
+                            Receipt (OR)</b> to the OBO (LBO) Staff                        
+                    </span>
+                </div>
+                <div class="list-group-item text-star fs-4 my-3">
+                    <span>
+                        Present claim stub, claim permit and sign logbook or other transmittals for acknowledgement                       
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+</body>
+</html>

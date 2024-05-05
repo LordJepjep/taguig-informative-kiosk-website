@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../../css/help-page.css">
+    <link rel="stylesheet" href="../../../sass/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/4226f23083.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../../../assets/js/grid.js"></script>
+    <title>Taguig Information Kiosk</title>
+</head>
+<body>
+    <div class="navbar bg-primary navbar-expand-lg ">
+        <button onclick="history.back()" class="justify-content-start bg-primary border-0 px-5 text-white">
+            <i class="fa-solid fa-chevron-left fa-3x"></i>
+        </button>
+        <button onclick="history.forward()" class="justify-content-start bg-primary border-0 px-5 text-white">
+            <i class="fa-solid fa-chevron-right fa-3x"></i>
+        </button>
+        <div class="container-fluid text-white justify-content-between">
+            <a href="../../../index.html" class="navbar-brand text-reset py-3 justify-content-start">
+                <div class="row">
+                    <div class="col-auto">
+                        <img src="../../../assets/images/logo.png" alt="Logo" class="d-inline-block align-text-top w-25">
+                    </div>
+                </div>
+            </a>
+
+            <div class="col-xl-auto row time justify-content-end fs-2">
+                <span id="real-time" class="text-end"></span>
+                <span id="real-date" class="text-end"></span>
+            </div> 
+        </div>
+        <div class="dropstart px-3">
+            <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-bars fa-3x"></i>
+            </a>
+          
+            <ul class="dropdown-menu fs-4 bg-accent p-0 text-primary">
+              <li><a class="dropdown-item py-3 text-reset fw-bold" href="../../../index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+              <li><a class="dropdown-item py-3 text-reset fw-bold" href="../../announcement/announcement.html"><i class="fa-solid fa-bullhorn"></i> Annoucements</a></li>
+              <li><a class="dropdown-item py-3 text-reset fw-bold" href="../../event/event.html"><i class="fa-solid fa-calendar-days"></i> Events</a></li>
+              <li><a class="dropdown-item py-3 text-reset fw-bold" href="../help-page.html"><i class="fa-solid fa-circle-question"></i> Help Desk</a></li>
+              <li><a class="dropdown-item py-3 text-reset fw-bold" href="../../map/City Hall Map Directory V2.html"><i class="fa-solid fa-map-location"></i> Map</a></li>
+              <li><a class="dropdown-item py-3 text-reset fw-bold" href="../help-page/help-page-offices.html"><i class="fa-solid fa-user-group"></i> Citizen's Charter</a></li>               </ul>
+        </div>
+    </div>
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="px-3 py-1 fs-3 fw-medium bg-altlight">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="../help-page.html">Help Desk</a></li>
+          <li class="breadcrumb-item"><a href="../help-page-offices.html">Offices</a></li>
+          <li class="breadcrumb-item"><a href="../help-page-bplo.html">BPLO</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Securing New Business Permit</li>
+        </ol>
+    </nav>
+    <section class="banner-container">
+        <div class="container-lg">
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-md-start">
+                    <h1 class="text-secondary">
+                        <div class="display-1 text-center p-3 fw-bold">Citizen's Charter</div>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid w-75 my-5">
+        <div class="row justify-content-center p-5">
+            <h1 class="display-lg-2 display-xl-3 fw-bold text-uppercase py-4 px-3 bg-secondary text-white">Securing New Business Permit</h2>
+            <h2 class="py-3 bg-primary text-white"><i class="fa-regular fa-circle-question px-2"></i> Description</h2>
+            <ul class="list-group list-group-flush mb-5 fs-3">
+                <li class="list-group-item">All enterprises are required to secure a Business Permit before the start of business operations.</li>
+                <li class="list-group-item">All issued permits are subject to "Post-Audit" process.</li>
+                <li class="list-group-item">Inspection may take 1-2 days depending on the status of the business or if the establishment has no representative present atthe declared office.</li>
+            </ul>
+            <h2 class="py-3 bg-primary text-white"><i class="fa-solid fa-location-dot px-2"></i> Where:</h2>
+            <ul class="list-group list-group-flush mb-5 fs-3">
+                <li class="list-group-item"><i class="fa-solid fa-building"></i> Business Permits and Licensing Office (City Hall)</li>
+                <li class="list-group-item"><i class="fa-solid fa-building"></i> SM Aura</li>
+            </ul>
+            
+            <h2 class="py-3 bg-primary text-white"><i class="fa-solid fa-list-check px-2"></i> Requirements</h2>
+            <div class="list-group list-group-flush gap-1 fs-4 mb-5">
+                <div class="list-group-item text-star fs-4">
+                    <i class="fa-regular fa-square-check"></i> 
+                    <span>
+                        Accomplished Application Form 
+                        (From <a href="../help-page-bplo.html" class="text-accent">BPLO</a>)
+                        </span>
+                </div>
+                <button class="list-group-item btn btn-primary text-start dropdown-toggle fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#businessReg" aria-expanded="false" aria-controls="businessReg">
+                    <i class="fa-regular fa-square-check"></i> 
+                    <span>Proof of Business Registration if Single Proprietor or Corporation</span>
+                </button>
+                <div class="collapse card card-body" id="businessReg">
+                    <ul class="list-group">
+                        <li class="list-group-item">Articles of Incorporation</li>
+                        <li class="list-group-item">DTI Registration</li>
+                        <li class="list-group-item">CDA Accreditation</li>
+                    </ul>
+                </div>
+                <button class="list-group-item btn btn-primary text-start dropdown-toggle fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#rightBusiness" aria-expanded="false" aria-controls="rightBusiness">
+                    <i class="fa-regular fa-square-check"></i> 
+                    <span>Proof of right to occupy the place of business/ownership </span>
+                </button>
+                <div class="collapse card card-body" id="rightBusiness">
+                    <ul class="list-group">
+                        <li class="list-group-item">If renting: Lease Contract</li>
+                        <li class="list-group-item">If property Owned: Tax declaration</li>
+                        <li class="list-group-item">If not renting: Letter of Consent</li>
+
+                    </ul>
+                </div>
+                <div class="list-group-item text-star fs-4">
+                    <i class="fa-regular fa-square-check"></i> 
+                    <span>Barangay Clearance</span>
+                </div>
+                <div class="list-group-item text-star fs-4">
+                    <i class="fa-regular fa-square-check"></i> 
+                    <span>Locational Clearance & Zoning Clearance from (from <a href="../help-page-cpdo.html" class="text-accent">CPDO</a>)</span>
+                </div>
+                <div class="list-group-item text-star fs-4">
+                    <i class="fa-regular fa-square-check"></i> 
+                    <span>Occupancy Permit </span>
+                </div>
+                <button class="list-group-item btn btn-primary text-start dropdown-toggle fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#picLogo" aria-expanded="false" aria-controls="picLogo">
+                    <i class="fa-regular fa-square-check"></i> 
+                    <span>Pictures/Logos</span>
+                </button>
+                <div class="collapse card card-body" id="picLogo">
+                    <ul class="list-group">
+                        <li class="list-group-item">3R picture of establishment colored</li>
+                        <li class="list-group-item">Company Logo (forcorporation, Partnership, CDA)</li>
+                        <li class="list-group-item">2x2 ID picture for Single Proprietorship</li>
+                    </ul>
+                </div>
+                <div class="list-group-item text-star fs-4">
+                    <i class="fa-regular fa-square-check"></i> 
+                    <span>Insurance (CGL) </span>
+                </div>
+                <div class="list-group-item text-star fs-4">
+                    <i class="fa-regular fa-square-check"></i> 
+                    <span>Official receipt and Statement of Account (from <a href="../help-page-cto.html" class="text-accent">CTO</a>)</span>
+                </div>
+                <div class="list-group-item text-star fs-4">
+                    <i class="fa-regular fa-square-check"></i> 
+                    <span>Some business may have additional requirements imposed by National Agencies. </span>
+                </div>
+                <button class="list-group-item btn btn-primary text-start dropdown-toggle fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#letterAuthority" aria-expanded="false" aria-controls="letterAuthority">
+                    <i class="fa-regular fa-square-check"></i> 
+                    <span>If applying through a representative: </span>
+                </button>
+                <div class="collapse card card-body" id="letterAuthority">
+                    <ul class="list-group">
+                        <p class="px-3">Any of the following:</p>
+                        <li class="list-group-item"> Letter of Authority</li>
+                        <li class="list-group-item">Special Power of Attorney </li>
+                        <li class="list-group-item">or Secretary’s Certificate</li>
+                    </ul>
+                </div>
+            </div>
+            <h2 class="py-3 bg-primary text-white">Steps</h2>
+            <div class="list-group-numbered list-group-flush gap-1 fs-4">
+                <div class="list-group-item text-star fs-4 my-3">
+                    <span>Submit the duly accomplished application form with complete requirements</span>
+                </div>
+                <div class="list-group-item text-star fs-4 my-3">
+                    <span>Pay relevant <b>Business Taxes and Fees</b> to the 
+                        <a href="../help-page-cto.html" class="text-accent">City Treasurers Office</a></span>
+                </div>
+                <div class="list-group-item text-star fs-4 my-3">
+                    <span>Present the <b>Statement of Account</b> and <b>Official Receipt</b> from the 
+                        <a href="../help-page-cto.html" class="text-accent">City Treasurer’s Office</a> and claim <b>Business Permit</b></span>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+</body>
+</html>

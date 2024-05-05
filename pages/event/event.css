@@ -1,0 +1,216 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.logo img {
+  width: 30px; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.banner-container {
+  padding: 0 0 15rem 0 ;
+  background-image: url("../../assets/images/taguigbanner_notext.png");
+  background-size: contain;
+}
+
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+}
+.wrapper i {
+  top: 65%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapper i:first-child{
+  left: -22px;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  height: 500px;
+  padding: 1rem;
+  list-style: none;
+  background:  #d9202d;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 8px;
+}
+.carousel .card .img {
+  background: #5953ff;
+  height: 148px;
+  width: 148px;
+  border-radius: 50%;
+}
+.card .img img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+.carousel .card h2 {
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+  color: white;
+}
+.carousel .card span {
+  color: #ffd83e;
+  font-size: 1.31rem;
+}
+
+.read-more-btn {
+  background-color: #504cc8;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #4640db;
+}
+
+.read-more-btn:focus {
+  outline: none;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 8px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.navigate-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.navigate-button a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #504cc8;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid #fff;
+}
+
+.navigate-button a:hover {
+  background-color: rgba(220, 72, 72, 0.795);
+  color: #373c4f;
+}
+
+
+
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}
+@media only screen and (max-width: 1080px){
+  .banner-container{
+      background-size: cover
+  }
+  .card-img {
+      max-width: 128px;
+      align-self: center;
+      padding-top: 1rem;
+  }
+}

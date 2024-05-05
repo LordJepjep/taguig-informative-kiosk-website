@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
+    <title>Taguig Information Kiosk</title>
+    <link rel="stylesheet" href="css/stye.css">
+    <link rel="stylesheet" href="sass/main.css">
+    <script src="https://kit.fontawesome.com/4226f23083.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/grid.js"></script>
+</head>
+<body>
+    
+    <div class="navbar bg-primary navbar-expand-lg ">
+        <button onclick="history.back()" class="justify-content-start bg-primary border-0 px-5 text-white">
+            <i class="fa-solid fa-chevron-left fa-3x"></i>
+        </button>
+        <button onclick="history.forward()" class="justify-content-start bg-primary border-0 px-5 text-white">
+            <i class="fa-solid fa-chevron-right fa-3x"></i>
+        </button>
+        <div class="container-fluid text-white justify-content-between">
+            
+            <a href="index.html" class="navbar-brand text-reset py-3 justify-content-start">
+                <div class="row">
+                    <div class="col-auto">
+                        <img src="assets/images/logo.png" alt="Logo" class="d-inline-block align-text-top w-25">
+                    </div>
+                </div>
+            </a>
+
+            <div class="col-xl-auto row time justify-content-end fs-2">
+                <!-- <span id="real-time" class="text-end fw-bold"></span>
+                <span id="real-date" class="text-end fw-bold"></span> -->
+            </div> 
+        </div>
+    </div>
+
+     <section class="banner-container">
+        <div class="container-lg py-xl-5">
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-md-start">
+                    <h1 class="text-secondary">
+                        <div class="display-3 text-center fw-medium">Welcome to the Taguig Informative Kiosk</div>
+                        <div class="display-5 text-center">What would you like to do?</div>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+     
+    <section class="py-5 px-1 main-content bg-light">
+        <div class="container-lg">
+            <div class="row justify-content-center gap-xl-5 gap-lg-3">
+                <div class="col-xl-12 col-md-12 text-white fs-1 bg-secondary rounded-3">
+                    <div id="real-time" class="text-center fw-bold"></div>
+                    <div id="real-date" class="text-center fw-bold"></div>
+                </div>
+
+                <div class="col-xl-12 col-md-12">
+                    <a href="map/City Hall Map Directory V2.html" class="card bg-primary text-light text-center text-decoration-none h-100 w-100 shadow" role="button">
+                        <i class="card-img-top fa-solid fa-map-location fa-5x py-5"></i>
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Map Directory
+                            </h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <a href="pages/announcement/announcement.html" class="card bg-primary text-light text-center text-decoration-none h-100 w-100 shadow" role="button">
+                        <i class="card-img-top fa-solid fa-bullhorn fa-5x py-5"></i>
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Announcement
+                            </h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <a href="pages/event/event.html" class="card bg-primary text-light text-center text-decoration-none h-100 w-100 shadow" role="button">
+                        <i class="card-img-top fa-solid fa-calendar-days fa-5x py-5"></i>
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Events
+                            </h3>
+                        </div>
+                    </a>
+                </div>
+               
+                <div class="col-xl-4 col-md-4">
+                    <a href="pages/help-page/help-page-offices.html" class="card bg-primary text-light text-center text-decoration-none h-100 w-100 shadow" role="button">
+                        <i class="card-img-top fa-solid fa-user-group fa-5x py-5"></i>
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Citizen's Charter
+                            </h3>   
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <a href="pages/help-page/help-page1.html" class="card bg-primary text-light text-center text-decoration-none h-100 w-100 shadow" role="button">
+                        <i class="card-img-top fa-solid fa-circle-question fa-5x py-5"></i>
+                        <div class="card-body">
+                            <h3 class="card-title">
+                            Help Page
+                            </h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <div class="container-fluid p-5 my-5">
+        <div class="row row-cols-xl-2 row-cols-lg-1 shadow">
+            <div class="col card bg-altlight rounded">
+                <div class="card-body">
+                    <h2 class="display-3 fw-medium card-title py-5 text-primary text-center"> 
+                        <i class="fa-solid fa-bullseye fa-lg text-primary"></i> 
+                        MISSION
+                    </h2>
+                    <p class="card-text fs-3">The mission of a city is not accomplished by simply maintaining peace and order, creating wealth and providing social services. It is truly accomplished when the city inspires and empower its citizens to dream, develop their potentials and lead meaningful lives, as one created in God’s image.
+                        <br>
+                        <br> 
+                        Ang layunin ng isang lungsod ay hindi naisasakatuparan sa pamamagitan lamang ng pagpapanatili ng kapayapaan at kaayusan, paglikha ng yaman at pagbibigay ng mga serbisyong panlipunan; ito ay ganap na naisasakatuparan kung ang lungsod ay nagbibigay inspirasyon at kapangyarihan sa mga 
+                        mamamayan na mangarap, paunlarin ang kanilang kakayanan, at mamuhay nang may kabuluhan, bilang nilikhang kawangis ng Diyos.
+                    </p>
+                </div>
+            </div>
+            <div class="col card bg-altlight rounded">
+                <div class="card-body">
+                    <h2 class="display-3 fw-medium card-title py-5 text-primary text-center"> 
+                        <i class="fa-solid fa-eye fa-lg text-primary"></i> 
+                        VISION
+                    </h2>
+                    <p class="card-text fs-3">
+                        A loving, caring, peaceful and progressive city serving God and all Taguigeños by inspiring and empowering them to dream, develop their potentials and lead meaningful lives.
+                        <br>
+                        <br>
+                        Isang mapagmahal, mapag-aruga, matiwasay, at maunlad na Lungsod na naglilingkod sa Diyos at lahat ng Taguigeños sa pamamagitan ng pagbibigay inspirasyon at kapangyarihan sa kanila upang
+                        mangarap, paunlarin ang kanilang kakayanan, at mamuhay ng may kabuluhan..
+                    </p>
+            </div>             
+        </div>          
+    </div>
+
+    <div class="container-fluid my-5">
+        <div class="row justify-content-center">
+            <h2 class="display-3 fw-medium card-title py-5 my-5 text-accent-light fw-bold text-center bg-primary rounded-5 shadow">
+                <i class="fa-solid fa-clock-rotate-left fa-lg"></i>
+                HISTORY
+            </h2>
+            <img src="assets/images/History.jpg" alt="History Image" class="w-100 rounded-5">
+            <div class="col-10 pt-5 fs-4">
+                <p class="lead fs-3">Before Taguig came to be, there was this settlement under the Kingdom of Tondo with a population counting 800 farmers and fishermen, believed to be mixed with Chinese settlers as revealed by archaeological artifacts like glasses, cups, porcelain plates and utensils bearing Chinese characters dug in the area.</p>
+                <p>Spain subjugated the islands in 1571, and in 1582, the Spanish rulers formally recognized the settlement as a part of the Encomienda del Tondo and placed it under the headship of an Alcalde Mayor, Captain Vergara, who ruled it up to 1583.</p>
+                <p>On April 25, 1587, the settlement, already known as Taguig, and comprising of nine (9) barrios, was decreed a pueblo or town of the province of Manila and placed under Kapitan Juan Basi.</p>
+                <p> On March 29, 1 900, General Order No. 4 proclaimed Taguig as an independent municipality. It was subsequently incorporated as part of Rizal Province on June 11, 1901. Two years after, Taguig, Muntinlupa, and Pateros were merged by virtue of Philippine Commission Act No. 942 with Taguig hosting the seat of the municipal government.
+                    The merger lasted but a month as Muntinlupa was separated from it and made part of Binan by virtue of Act No. 1008 enacted in November 25, 1903. It was merged with Taguig and Pateros again in March 22, 1905 with the promulgation of Act No. 1308. On February 29, 1908, Taguig, with Pateros, was declared an independent Municipality through Executive Order No. 20. On January 1, 1918, Taguig and Pateros separated and became independent municipalities of Rizal Province.
+                </p>
+                <p>In the 1970s, Taguig’s political subdivision was changed to eighteen (18) barangays following the nationwide implementation of the Integrated Reorganization Plan. </p>
+                <p> On November 7, 1975, P.D. No. 824 carved out Taguig from the province of Rizal and made it part of the National Capital Region. On December 8, 1998, 
+                    Republic Act No. 8487 was enacted which converted the Municipality of Taguig into a Highly Urbanized City. A plebiscite was conducted the following year which showed that the citizens were against it. A petition seeking for a recount was granted by the Supreme Court on February 19, 2004. The recount showed that majority of Taguig’s voters favored converting the Municipality of Taguig into a City. Subsequently, Taguig officially became a City on December 8, 2004.</p>
+                <p> In 2008, the Taguig City council enacted City Ordinances Nos. 24-27, 57-61, 67-69, and 78, Series of 2008 which created ten (10) new barangays, carving them out from the initial 18 barangays. Hence, in December 2008, after a successful plebiscite, Taguig was politically subdivided into 28 barangays.</p>
+                <p> </p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <h3 class="display-5 fw-medium card-title py-5 text-secondary text-center">
+                ORIGIN OF THE NAME 
+            </h3>
+            <div class="col-10 pt-3 fs-4 clearfix">
+                <img src="assets/images/Origin.jpg" alt="Origin Image" class="col-4 float-lg-end mb-3 ms-3 rounded-5 img-fluid">
+                <p class="">
+                    <span class="lead fs-3">The original 800 farmer-fishermen settlers of the area were good at threshing rice after harvest. </span>
+                    Hence they were referred to as “mga taga-giik,” and their settlement as “pook ng mga taga-giik.” 
+                    Spanish friar Fray Alonso de Alvarado, together with conquistador Rey Lopez de Villalobos who crossed Pasig River 
+                    to reach Taguig in 1571 found “taga-giik” difficult to pronounce, and could only produce the word sounding like 
+                    “tagui-ig.” So many mispronouncements later, “tagui-ig” was shortened to the present day “Taguig.”
+                </p>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid my-5">
+        <div class="row justify-content-center">
+            <h2 class="display-3 fw-medium card-title py-5 my-5 text-accent-light fw-bold text-center bg-primary rounded-5 shadow">
+                CITY LOGO RATIONALE
+            </h2>
+            <div class="col-10 pt-3 fs-4 clearfix">
+                    <img src="assets/images/logo.png" alt="City Image" class="col-4 float-lg-end mb-3 ms-3 rounded-5 img-fluid">
+                    <p>
+                        <span class="lead fs-3">
+                            In 2019, Taguig City embraced a new seal that integrates the hues of the Philippine flag: blue (for truth, faith, and stability), red (for strength, power, and energy), and yellow (positivity, optimism, and loyalty).
+                        </span><br>
+                        The seal also encompasses various elements that carry meaningful representations. The presence of buildings signifies the city’s remarkable growth and progress, while the heart serves as a visual embodiment of the city’s cherished motto, “I Love Taguig.”
+                        Furthermore, the sun embodies the promise of a radiant future (light) and a warm community (warmth).
+                    </p>
+                    <p>
+                        waves portraying life and paying tribute to the persevering fishing culture in Taguig.
+                        The rice grains exemplify the city’s etymology, derived from “taga-giik,” which means rice thresher in Filipino. The inclusion of 28 grains signifies the 28 barangays that constitute Taguig City.
+                        The two dots represent the two districts of Taguig.
+                        Lastly, the circular shape of the seal symbolizes protection, inclusion, and perfection.
+                    </p> 
+                    
+            </div>
+        </div>
+    </div>
+
+     <!-- Emegency Hotlines -->
+     <div class="container-fluid my-5">
+        <div class="row">
+            <h2 class="display-3 fw-medium card-title py-5 my-5 text-accent-light fw-bold text-center bg-primary rounded-5 shadow">
+                <i class="fas fa-phone-alt pe-3"></i>EMERGENCY HOTLINES
+            </h2>
+        </div>
+        <div class="row mx-5">
+            <div class="col">
+                <div class="fs-2">
+                   
+                    <div class="text"style="font-weight: bold; color: red;">COMMAND CENTER</div>
+                    <div class="phone-number"></i>(O2) 8789-3200</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="fs-2">
+                    <div class="text"style="font-weight: bold;color: red;">TAGUIG RESCUE TEAM</div>
+                    <div class="phone-number"></i>0919-070-3112</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="fs-2">
+                    <div class="text"style="font-weight: bold;color: red;">PNP</div>
+                    <div class="phone-number">(02) 8642-3582</div>
+                    <div class="phone-number"></i>0998-598-7932</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="fs-2">
+                    <div class="textr"style="font-weight: bold;color: red;">TAGUIG BFP</div>
+                    <div class="phone-number">(02) 8837-0740</div>
+                    <div class="phone-number">(02) 8837-4496</div>
+                    <div class="phone-number">0906-211-0919</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

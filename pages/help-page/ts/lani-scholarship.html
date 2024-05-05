@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../../css/help-page.css">
+    <link rel="stylesheet" href="../../../sass/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/4226f23083.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../../../assets/js/grid.js"></script>
+    <title>Taguig Information Kiosk</title>
+</head>
+<body>
+    <div class="navbar bg-primary navbar-expand-lg ">
+        <button onclick="history.back()" class="justify-content-start bg-primary border-0 px-5 text-white">
+            <i class="fa-solid fa-chevron-left fa-3x"></i>
+        </button>
+        <button onclick="history.forward()" class="justify-content-start bg-primary border-0 px-5 text-white">
+            <i class="fa-solid fa-chevron-right fa-3x"></i>
+        </button>
+        <div class="container-fluid text-white justify-content-between">
+            <a href="../../../index.html" class="navbar-brand text-reset py-3 justify-content-start">
+                <div class="row">
+                    <div class="col-auto">
+                        <img src="../../../assets/images/logo.png" alt="Logo" class="d-inline-block align-text-top w-25">
+                    </div>
+                </div>
+            </a>
+
+            <div class="col-xl-auto row time justify-content-end fs-2">
+                <span id="real-time" class="text-end"></span>
+                <span id="real-date" class="text-end"></span>
+            </div> 
+        </div>
+        <div class="dropstart px-3">
+            <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-bars fa-3x"></i>
+            </a>
+          
+            <ul class="dropdown-menu fs-4 bg-accent p-0 text-primary">
+              <li><a class="dropdown-item py-3 text-reset fw-bold" href="../../../index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+              <li><a class="dropdown-item py-3 text-reset fw-bold" href="../../announcement/announcement.html"><i class="fa-solid fa-bullhorn"></i> Annoucements</a></li>
+              <li><a class="dropdown-item py-3 text-reset fw-bold" href="../../event/event.html"><i class="fa-solid fa-calendar-days"></i> Events</a></li>
+              <li><a class="dropdown-item py-3 text-reset fw-bold" href="../help-page.html"><i class="fa-solid fa-circle-question"></i> Help Desk</a></li>
+              <li><a class="dropdown-item py-3 text-reset fw-bold" href="../../map/City Hall Map Directory V2.html"><i class="fa-solid fa-map-location"></i> Map</a></li>
+              <li><a class="dropdown-item py-3 text-reset fw-bold" href="../help-page/help-page-offices.html"><i
+                class="fa-solid fa-user-group"></i> Citizen's Charter</a></li>            </ul>
+        </div>
+    </div>
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="px-3 py-1 fs-3 fw-medium bg-altlight">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="../help-page.html">Help Desk</a></li>
+          <li class="breadcrumb-item"><a href="../help-page-offices.html">Offices</a></li>
+          <li class="breadcrumb-item"><a href="../help-page-ts.html">Taguig Scholarship</a></li>
+          <li class="breadcrumb-item active" aria-current="page">LANI SCholarship</li>
+        </ol>
+    </nav>
+    <section class="banner-container">
+        <div class="container-lg">
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-md-start">
+                    <h1 class="text-secondary">
+                        <div class="display-1 text-center p-3 fw-bold">Citizen's Charter</div>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid w-75 my-5">
+        <div class="row justify-content-center p-5">
+            <h1 class="display-lg-2 display-xl-3 fw-bold text-uppercase py-4 px-3 bg-secondary text-white">LANI Scholarship</h2>
+            <h2 class="py-3 bg-primary text-white"><i class="fa-solid fa-location-dot px-2"></i> Where:</h2>
+            <ul class="list-group list-group-flush mb-5 fs-3">
+                <li class="list-group-item"><i class="fa-solid fa-building"></i>Taguig Scholarship Offce (CAYETANO SCI-TECH)</li>
+            </ul>
+            <h2 class="py-3 bg-primary text-white"><i class="fa-solid fa-user px-2"></i> Basic Qualifications:</h2>
+            <ul class="list-group list-group-flush mb-5 fs-3">
+                <li class="list-group-item">Applicant must be already enrolled.</li>
+                <li class="list-group-item">If 18 years old or older, applicant must be an active voter of Taguig or voter in the "Embo" area that they are residing in.</li>
+                <li class="list-group-item">At least one of the parents is an active voter Taguig or voter in the "Embo" area that they are residing in.</li>
+                <li class="list-group-item">Family must be resident of Taguig or in the "Embo" barangay for at least three (3) years and,</li>
+                <li class="list-group-item">Of good moral character both in paper and in actual behavior</li>
+            </ul>
+            <h2 class="py-3 bg-primary text-white"><i class="fa-solid fa-list-check px-2"></i> Requirements</h2>
+            <div class="list-group list-group-flush gap-1 fs-4 mb-5">
+                <div class="list-group-item text-star fs-4">
+                    <i class="fa-regular fa-square-check"></i> 
+                    <span>
+                        Applied thru Online Application via Taguig Scholarship Facebook page
+                    </span>
+                </div>
+                <div class="list-group-item text-star fs-4">
+                    <i class="fa-regular fa-square-check"></i> 
+                    <span>
+                        <b> AUTHENTICATED / CERTIFIED TRUE COPY <br></b>
+                        Official Form / Registration Form / Certification of Matriculation
+                        for current application's semester and school year (current term for Quarter terms and Trimesters)
+                    </span>
+                </div>
+                <div class="list-group-item text-star fs-4">
+                    <i class="fa-regular fa-square-check"></i> 
+                    <span>
+                       <b> ORIGINAL / AUTHENTICATED / CERTIFIED TRUE COPY <br></b>
+                        Certificate of Grades last semester (with school seal / official signature);
+                        (For Trimester and Quarter terms, grades for past two (2) semesters)
+                    </span>
+                </div>
+                <button class="list-group-item btn btn-primary text-start dropdown-toggle fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#photocopies" aria-expanded="false" aria-controls="photocopies">
+                    <i class="fa-regular fa-square-check"></i> 
+                    <span><b>PHOTOCOPIES</b></span>
+                </button>
+                <div class="collapse card card-body" id="photocopies">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            Junior High School Certificate / Grade 10 Report Card / Certification from Principal of the school the applicant graduated From
+                            <br> <b>(FOR NEW APPLICANT)</b>
+                        </li>
+                        <li class="list-group-item">
+                            Senior High School Diploma / Grade 12 Report Card / Certification from Principal of the school the applicant graduated From
+                            <br> <b>(FOR NEW APPLICANT)</b>
+                        </li>
+                        <li class="list-group-item">
+                            School ID or any Government-issued ID (within the validity period, back-to-back on a single page, bearing the applicant's printed name and signature)
+                            <br> <b>(FOR NEW APPLICANT)</b>
+                        </li>
+                        <button class="list-group-item btn btn-primary text-start dropdown-toggle fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#validIDs" aria-expanded="false" aria-controls="validIDs">
+                            <i class="fa-regular fa-square-check"></i> 
+                            <span>List of Valid IDs</span>
+                        </button>
+                        <div class="collapse card card-body" id="validIDs">
+                            <ul class="list-group">
+                                <li class="list-group-item">e-Card/UMID Card</li>
+                                <li class="list-group-item">Driver's License</li>
+                                <li class="list-group-item">Passport</li>
+                                <li class="list-group-item">SSS ID</li>
+                                <li class="list-group-item">Voter's ID</li>
+                                <li class="list-group-item">BIR (TIN ID)</li>
+                                <li class="list-group-item">PWD ID</li>
+                                <li class="list-group-item">Solo Parent ID</li>
+                                <li class="list-group-item">Barangay ID</li>
+                                <li class="list-group-item">Postal ID</li>
+                                <li class="list-group-item">PhilHealth ID</li>
+                                <li class="list-group-item">Philippine ID (PhilID/ePhilID/National ID)</li>
+                                <li class="list-group-item">AFP Beneficiary / Dependent's ID</li>
+                            </ul>
+                        </div>
+                        <li class="list-group-item">
+                            Birth Certificate (issued by PSA/NSO/Civil Registry Office)
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Steps-->
+            <h2 class="py-3 bg-primary text-white px-2">Steps</h2>
+            <div class="list-group-numbered list-group-flush fs-4">
+                <div class="list-group-item text-star fs-4 my-3">
+                    <span>
+                        Apply thru the online application from the Taguig Scholarship Facebook Page       
+                        </span>
+                </div>
+                <div class="list-group-item text-star fs-4 my-3">
+                    <span>
+                        Wait for the official announcement for the current semester at the Taguig Scholarship Facebook Page
+                    </span>
+                </div>
+                <div class="list-group-item text-star fs-4 my-3">
+                    <span>
+                        Prepare the necessary documents before the assigned submission of documents
+                    </span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <img src="../../../assets/images/qr/taguig_scholarship.png" alt="qr to taguig social hygiene post" class="w-25">
+                </div>
+            </div>
+        </div>
+        
+    </section>
+</body>
+</html>

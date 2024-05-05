@@ -1,0 +1,190 @@
+.main-content {
+    min-height: 35rem;
+    
+
+}
+a {
+    text-decoration: none!important; 
+}
+a:hover {
+    filter: brightness(0.95);
+}
+.list-group-item:hover {
+    filter:brightness(0.9);
+}
+.banner-container {
+    padding: 0 0 15rem 0 ;
+    background-image: url("../assets/images/taguigbanner_notext.png");
+    background-size: contain;
+}
+h1, h2, h3{
+    color: #19489A;
+}
+
+.card:hover {
+    filter: brightness(0.75);
+}
+
+.card-img {
+    max-width: 185px;
+    min-width: 185px;
+    align-self: center;
+}
+
+
+.b ig-container {
+    background-color: #19489A;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Gap between items */
+    padding: 20px;
+    margin-top: 10px;
+}
+
+
+.small-container {
+    background-color: #dc3545;
+    padding: 20px;
+    height: 100px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center; 
+    border: 1px solid   #dc3545;
+}
+
+/* Style for the content inside small containers */
+.content {
+    display: flex;
+    flex-flow: column;
+    align-items: center; 
+    text-align: center;
+    font-family: Arial, sans-serif; 
+   
+}
+
+/* Style for the phone icon */
+.content i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* Style for the text and phone number */
+.text,
+.phone-number {
+    font-size: 60px;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    
+  }
+  .timeline {
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .timeline ul {
+    list-style: none;
+  }
+  .timeline ul li {
+    padding: 20px;
+    background-color: #19489a;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .timeline ul li:last-child {
+    margin-bottom: 0;
+  }
+  .timeline-content h1 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  .timeline-content p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+  .timeline-content .date {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+  }
+  @media only screen and (min-width: 768px) {
+    .timeline:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 100%;
+      background-color: #dc3545;
+    }
+    .timeline ul li {
+      width: 50%;
+      position: relative;
+      margin-bottom: 50px;
+    }
+    .timeline ul li:nth-child(odd) {
+      float: left;
+      clear: right;
+      transform: translateX(-30px);
+      border-radius: 20px 0px 20px 20px;
+    }
+    .timeline ul li:nth-child(even) {
+      float: right;
+      clear: left;
+      transform: translateX(30px);
+      border-radius: 0px 20px 20px 20px;
+    }
+    .timeline ul li::before {
+      content: "";
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: #dc3545;
+      top: 0px;
+    }
+    .timeline ul li:nth-child(odd)::before {
+      transform: translate(50%, -50%);
+      right: -30px;
+    }
+    .timeline ul li:nth-child(even)::before {
+      transform: translate(-50%, -50%);
+      left: -30px;
+    }
+    .timeline-content .date {
+      position: absolute;
+      top: -30px;
+    }
+    .timeline ul li:hover::before {
+      background-color: #19489a;
+    }
+  }
+
+
+@media only screen and (max-width: 1080px){
+    .banner-container{
+        background-size: cover
+    }
+    .card-img {
+        max-width: 128px;
+        align-self: center;
+        padding-top: 1rem;
+    }
+}

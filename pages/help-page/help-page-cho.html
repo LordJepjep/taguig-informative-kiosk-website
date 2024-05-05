@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/help-page.css">
+    <link rel="stylesheet" href="../../sass/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/4226f23083.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../../assets/js/grid.js"></script>
+    <title>Taguig Information Kiosk</title>
+</head>
+<body>
+    <div class="navbar bg-primary navbar-expand-lg ">
+        <button onclick="history.back()" class="justify-content-start bg-primary border-0 px-5 text-white">
+            <i class="fa-solid fa-chevron-left fa-3x"></i>
+        </button>
+        <button onclick="history.forward()" class="justify-content-start bg-primary border-0 px-5 text-white">
+            <i class="fa-solid fa-chevron-right fa-3x"></i>
+        </button>
+        <div class="container-fluid text-white justify-content-between">
+            
+            <a href="../../index.html" class="navbar-brand text-reset py-3 justify-content-start">
+                <div class="row">
+                    <div class="col-auto">
+                        <img src="../../assets/images/logo.png" alt="Logo" class="d-inline-block align-text-top w-25">
+                    </div>
+                </div>
+            </a>
+
+            <div class="col-xl-auto row time justify-content-end fs-2">
+                <span id="real-time" class="text-end"></span>
+                <span id="real-date" class="text-end"></span>
+            </div> 
+        </div>
+        <div class="dropstart px-3">
+            <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-bars fa-3x"></i>
+            </a>
+          
+            <ul class="dropdown-menu fs-4 bg-accent p-0 text-primary">
+              <li><a class="dropdown-item py-3 text-reset fw-bold" href="../../../index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+              <li><a class="dropdown-item py-3 text-reset fw-bold" href="../../announcement/announcement.html"><i class="fa-solid fa-bullhorn"></i> Annoucements</a></li>
+              <li><a class="dropdown-item py-3 text-reset fw-bold" href="../../event/event.html"><i class="fa-solid fa-calendar-days"></i> Events</a></li>
+              <li><a class="dropdown-item py-3 text-reset fw-bold" href="../help-page.html"><i class="fa-solid fa-circle-question"></i> Help Desk</a></li>
+              <li><a class="dropdown-item py-3 text-reset fw-bold" href="../../map/City Hall Map Directory V2.html"><i class="fa-solid fa-map-location"></i> Map</a></li>
+              <li><a class="dropdown-item py-3 text-reset fw-bold" href="../help-page/help-page-offices.html"><i
+                class="fa-solid fa-user-group"></i> Citizen's Charter</a></li>
+            </ul>
+        </div>
+    </div>
+   <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="px-3 py-1 fs-3 fw-medium bg-altlight">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="help-page-offices.html">Citizen's Charter</a></li>
+          <li class="breadcrumb-item active" aria-current="page">City Health Office</li>
+        </ol>
+    </nav>
+    <section class="banner-container">
+        <div class="container-lg">
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-md-start">
+                    <h1 class="text-secondary">
+                        <div class="display-1 text-center p-3 fw-bold">Citizen's Charter</div>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 px-1 main-content bg-light">
+        <div class="container-lg bg-altlight p-5 shadow">
+            <div class="list-group list-group-flush gap-1">
+                <h3 class="display-4 py-4 fw-medium bg-secondary text-uppercase text-center text-light border rounded-3">City Health Office </h3>
+                <a href="cho/about.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">About</div>
+                      Learn more about the City Health Office
+                    </div>
+                </a>
+                <a href="cho/hivtesting.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">HIV TESTING/SYPHILIS/HEPAB/STI ASSESSMENT (GONORRHEA)</div>
+                    </div>
+                </a>
+                <a href="cho/SEXUALLY TRANSMITTED INFECTION.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">SEXUALLY TRANSMITTED INFECTION (GONORRHEA), SYPHILIS, HEPA-B AND HIIV LINK TO CARE AND MANAGEMENT</div>
+                      
+                    </div>
+                </a>
+                <a href="cho/ANTI-RETROVIRAL THERAPY REFILL.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">ANTI-RETROVIRAL THERAPY REFILL</div>
+                      
+                    </div>
+                </a>
+                <a href="cho/death-certificate-institutional.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">DEATH CERTIFICATE (REVIEW) / INSTITUTIONAL DEATHS</div>
+                    </div>
+                </a>
+                <a href="cho/death-certificate-non-institutional.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">DEATH CERTIFICATE (INTERVIEW)/ NON-INSTITUTIONAL DEATHS</div>
+                
+                    </div>
+                </a>
+                <a href="cho/other-documents.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">OTHER DOCUMENTS/CERTIFICATIONS</div>
+                      
+                    </div>
+                </a>
+                <a href="cho/pre-marriage-counseling.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">PRE-MARRIAGE COUNSELLING/ FP-RP</div>
+                    </div>
+                </a>
+                <a href="cho/emergency-medical-services.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">EMERGENCY MEDICAL SERVICES</div>
+                      
+                    </div>
+                </a>
+                <a href="cho/hemodialysis-treatment.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">HEMODIALYSIS TREATMENT
+                    </div>
+                      
+                    </div>
+                </a>
+                <a href="cho/animal-bite-treatment.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">Animal Bite Treament</div>
+                      
+                    </div>
+                </a>
+                <a href="cho/tb-consultation-management.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">Consultation and Management of TB</div>
+                      
+                    </div>
+                </a>
+                <a href="cho/dental-consultaion-tooth-extraction-for-students.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">Dental Consultation, Tooth Extraction, Restorative Procedures, Oral Prophylaxis, Pit and Fissure Sealant
+                        Application, Fluoride Varnish Application and Issuance of Dental Certificate for students
+                        </div>
+                      
+                    </div>
+                </a>
+                <a href="cho/dental-consultaion-tooth-extraction-for-taguig-residents.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">Dental Consultation, Tooth Extraction, Restorative Procedures, Oral Prophylaxis, Pit and Fissure Sealant
+                        Application, Fluoride Varnish Application and Issuance of Dental Certificate for Taguig Residents
+                        
+                        </div>
+                      
+                    </div>
+                </a>
+                <a href="cho/issuance-of-health-certificate-for-food-handlers.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">Issuance of Health Certificate for Food Handlers (Individual and by Bulk or per
+                        Establishment)
+                        </div>
+                        By Bulk – 20 applicants and above (3-7 Days)
+
+                    </div>
+                </a>
+                <a href="cho/issuance-of-health-certificate-for-Non-food-handlers.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">Issuance of Health Certificate for Non Food Handlers (Individual and by Bulk or per
+                        Establishment)
+                        </div>
+                        By Bulk – 20 applicants and above (3-7 Days)
+
+                    </div>
+                </a>
+                <a href="cho/issuance-of-sanitary-permit-to-all-businesses.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">Issuance of Sanitary Permit to all Businesses, Commercial and Industrial
+                        Establishments including Public Schools and Government Hospitals, Goverment
+                        Facilities and Government Institutions
+                        </div>
+                    </div>
+                </a>
+                <a href="cho/issuance-certificate-water-potability-to-all-businesses.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">Issuance of Certificate of Water Potability to All Businesses, Commercial and
+                        Industrial Establishments including households, Public Schools and Government
+                        Hospitals                 
+                        </div>
+                    </div>
+                </a>
+                <a href="cho/issuance-of-transfer-exhumation-transit-permit.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">Issuance of Transfer/ Exhumation/Transit Permit of Deceased Person                
+                        </div>
+                    </div>
+                </a>
+                <a href="cho/disinfection-and-misting-residential.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">Disinfection and Misting of Residential and Government Offices
+                        Larviciding Operation    
+                        </div>
+                    </div>
+                </a>
+                <a href="cho/laboratory-examination.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">Laboratory Examinations for all patients from 31 Health Centers,
+                        Private Clinics and Public/Private Hospitals  
+                        </div>
+                        Complete Blood Count, Blood Chemistry 10, HIV Screening Test, Hepatitis B Screening Test, Syphilis Screening
+                        Test, Fecalysis, Urinalysis , TB Test [GeneXpert and DSSM] and Slit Skin Smear for Leprosy
+                    </div>
+                
+                </a>
+                <a href="cho/pre-employement-laboratory-requirements.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">Pre-employment Laboratory Requirements   
+                        </div>
+                        Urinalysis, Fecalysis, Complete Blood Count and Hepatitis A Screening Test
+                    </div>
+                </a>
+            </div>
+        </div> 
+    </section>
+    
+    
+    
+    <!-- Bootstrap JS Bundle with Popper.js -->
+    </body>
+    </html>
+</body>
+</html>
