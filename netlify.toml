@@ -4,4 +4,5 @@ for = "/*"
 [headers.values]
 Cross-Origin-Opener-Policy = "same-origin"
 Cross-Origin-Embedder-Policy = "require-corp"
-Content-Security-Policy = "frame-ancestors 'self' *.facebook.com *.internalfb.com *.fbcdn.net;"
+Cross-Origin-Embedder-Policy = "credentialless"
+Content-Security-Policy = "frame-ancestors 'self' *.facebook.com *.internalfb.com *.fbcdn.net;" 
