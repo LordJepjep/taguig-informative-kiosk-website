@@ -3,7 +3,7 @@
 // that they need an Internet connection to run the project if desired.
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
-const CACHE_VERSION = "1714912112|135197050";
+const CACHE_VERSION = "1715242041|496981355";
 const CACHE_PREFIX = "City Hall Map Di-sw-cache-";
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
 const OFFLINE_URL = "City Hall Map Directory V2.offline.html";
