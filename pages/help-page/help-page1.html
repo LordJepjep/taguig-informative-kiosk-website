@@ -1,100 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../../assets/images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../../css/help-page.css">
-    <link rel="stylesheet" href="../../sass/main.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/4226f23083.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="../../assets/js/grid.js"></script>
-    <title>Taguig Information Kiosk</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../../assets/images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../css/help-page.css">
+  <link rel="stylesheet" href="../../sass/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/4226f23083.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="../../assets/js/grid.js"></script>
+  <title>Taguig Information Kiosk</title>
 </head>
+
 <body>
-    <div class="navbar bg-primary navbar-expand-lg ">
-        <button onclick="history.back()" class="justify-content-start bg-primary border-0 px-5 text-white">
-            <i class="fa-solid fa-chevron-left fa-3x"></i>
-        </button>
-        <button onclick="history.forward()" class="justify-content-start bg-primary border-0 px-5 text-white">
-            <i class="fa-solid fa-chevron-right fa-3x"></i>
-        </button>
-        <div class="container-fluid text-white justify-content-between">
-            
-            <a href="../../index.html" class="navbar-brand text-reset py-3 justify-content-start">
-                <div class="row">
-                    <div class="col-auto">
-                        <img src="../../assets/images/logo.png" alt="Logo" class="d-inline-block align-text-top w-25">
-                    </div>
-                </div>
-            </a>
+  <div class="navbar bg-primary navbar-expand-lg ">
+    <button onclick="history.back()" class="justify-content-start bg-primary border-0 px-5 text-white">
+      <i class="fa-solid fa-chevron-left fa-3x"></i>
+    </button>
+    <button onclick="history.forward()" class="justify-content-start bg-primary border-0 px-5 text-white">
+      <i class="fa-solid fa-chevron-right fa-3x"></i>
+    </button>
+    <div class="container-fluid text-white justify-content-between">
 
-            <div class="col-xl-auto row time justify-content-end fs-2">
-                <span id="real-time" class="text-end fw-bold"></span>
-                <span id="real-date" class="text-end fw-bold"></span>
-            </div> 
+      <a href="../../index.html" class="navbar-brand text-reset py-3 justify-content-start">
+        <div class="row">
+          <div class="col-auto">
+            <img src="../../assets/images/logo.png" alt="Logo" class="d-inline-block align-text-top w-25">
+          </div>
         </div>
-        <div class="dropstart px-3">
-            <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa-solid fa-bars fa-3x"></i>
-            </a>
-          
-            <ul class="dropdown-menu fs-4 bg-accent p-0 text-primary">
-              <li><a class="dropdown-item py-3 text-reset fw-bold" href="../../index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-              <li><a class="dropdown-item py-3 text-reset fw-bold" href="../announcement/announcement.html"><i class="fa-solid fa-bullhorn"></i> Annoucements</a></li>
-              <li><a class="dropdown-item py-3 text-reset fw-bold" href="../event/event.html"><i class="fa-solid fa-calendar-days"></i> Events</a></li>
-              <li><a class="dropdown-item py-3 text-reset fw-bold" href="help-page.html"><i class="fa-solid fa-circle-question"></i> Help Desk</a></li>
-              <li><a class="dropdown-item py-3 text-reset fw-bold" href="../../map/City Hall Map Directory V2.html"><i class="fa-solid fa-map-location"></i> Map</a></li>
-              <li><a class="dropdown-item py-3 text-reset fw-bold" href="../help-page/help-page-offices.html"><i
-                class="fa-solid fa-user-group"></i> Citizen's Charter</a></li>
-            </ul>
-        </div>
+      </a>
+
+      <div class="col-xl-auto row time justify-content-end fs-2">
+        <span id="real-time" class="text-end fw-bold"></span>
+        <span id="real-date" class="text-end fw-bold"></span>
+      </div>
     </div>
-    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="px-3 py-1 fs-3 fw-medium bg-altlight">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Help Desk</li>
-        </ol>
-    </nav>
-    <section class="banner-container">
-        <div class="container-lg">
-            <div class="row justify-content-center">
-                <div class="col-md-12 text-md-start">
-                    <h1 class="text-secondary">
-                        <div class="display-1 text-center p-3 fw-bold">Taguig Emergency Hotlines</div>
-                    </h1>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="dropstart px-3">
+      <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fa-solid fa-bars fa-3x"></i>
+      </a>
 
-    <section class="py-5 px-1 main-content bg-light">
-        <div class="container-lg bg-altlight p-5 shadow">
-            <div class="row justify-content-center gap-5">
-                <h1 class="display-lg-2 display-xl-3 fw-bold text-uppercase py-4 px-3 bg-secondary text-white text-center">What do you need help with?</h1>
-                <div class="row justify-content-center gap-5">
-                  <div class="col-xl-3 col-md-4">
-                    <a href="help-page-categories-health.html" class="card bg-primary text-light text-center text-decoration-none h-100 w-100 shadow" role="button">
-                        <i class="fa-solid fa-briefcase-medical fa-5x pt-5"></i>
-                        <div class="card-body">
-                            <h3 class="card-title">
-                                Health
-                            </h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xl-3 col-md-4">
-                    <a href="help-page-categories-scholarship.html" class="card bg-primary text-light text-center text-decoration-none h-100 w-100 shadow" role="button">
-                        <i class="fa-solid fa-graduation-cap fa-5x pt-5"></i>
-                        <div class="card-body">
-                            <h3 class="card-title">
-                                Scholarship
-                            </h3>
-                        </div>
-                    </a>
-                </div>
-                <!-- <div class="col-xl-3 col-md-4">
+      <ul class="dropdown-menu fs-4 bg-accent p-0 text-primary">
+        <li><a class="dropdown-item py-3 text-reset fw-bold" href="../../index.html">
+            <i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a class="dropdown-item py-3 text-reset fw-bold" href="../announcement/announcement.html"><i
+              class="fa-solid fa-bullhorn"></i> Annoucements</a></li>
+        <li><a class="dropdown-item py-3 text-reset fw-bold" href="../event/event.html"><i
+              class="fa-solid fa-calendar-days"></i> Events</a></li>
+        <li><a class="dropdown-item py-3 text-reset fw-bold" href="../../map/City Hall Map Directory V2.html"><i
+              class="fa-solid fa-map-location"></i> Map</a></li>
+        <li><a class="dropdown-item py-3 text-reset fw-bold" href="../help-page/help-page-offices.html"><i
+              class="fa-solid fa-user-group"></i> Citizen's Charter</a></li>
+      </ul>
+    </div>
+  </div>
+  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="px-3 py-1 fs-3 fw-medium bg-altlight">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Help Desk</li>
+    </ol>
+  </nav>
+  <section class="banner-container">
+    <div class="container-lg">
+      <div class="row justify-content-center">
+        <div class="col-md-12 text-md-start">
+          <h1 class="text-secondary">
+            <div class="display-1 text-center p-3 fw-bold">Taguig Emergency Hotlines</div>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 px-1 main-content bg-light">
+    <div class="container-lg bg-altlight p-5 shadow">
+      <div class="row justify-content-center gap-5">
+        <h1 class="display-lg-2 display-xl-3 fw-bold text-uppercase py-4 px-3 bg-secondary text-white text-center">What
+          do you need help with?</h1>
+        <div class="row justify-content-center gap-5">
+          <div class="col-xl-3 col-md-4">
+            <a href="help-page-categories-health.html"
+              class="card bg-primary text-light text-center text-decoration-none h-100 w-100 shadow" role="button">
+              <i class="fa-solid fa-briefcase-medical fa-5x pt-5"></i>
+              <div class="card-body">
+                <h3 class="card-title">
+                  Health
+                </h3>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-3 col-md-4">
+            <a href="help-page-categories-scholarship.html"
+              class="card bg-primary text-light text-center text-decoration-none h-100 w-100 shadow" role="button">
+              <i class="fa-solid fa-graduation-cap fa-5x pt-5"></i>
+              <div class="card-body">
+                <h3 class="card-title">
+                  Scholarship
+                </h3>
+              </div>
+            </a>
+          </div>
+          <!-- <div class="col-xl-3 col-md-4">
                     <a href="help-page-categories-business.html" class="card bg-primary text-light text-center text-decoration-none h-100 w-100 shadow" role="button">
                         <i class="fa-solid fa-briefcase fa-5x pt-5"></i>
                         <div class="card-body">
@@ -104,140 +113,146 @@
                         </div>
                     </a>
                 </div> -->
-                <div class="col-xl-3 col-md-4">
-                    <a href="help-page-categories-permit.html" class="card bg-primary text-light text-center text-decoration-none h-100 w-100 shadow" role="button">
-                        <i class="fa-solid fa-scroll fa-5x pt-5"></i>
-                        <div class="card-body">
-                            <h3 class="card-title">
-                                Permits and Licenses
-                            </h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xl-3 col-md-4">
-                    <a href="help-page-cto.html" class="card bg-primary text-light text-center text-decoration-none h-100 w-100 shadow" role="button">
-                        <i class="fa-solid fa-money-bill fa-5x pt-5"></i>
-                        <div class="card-body">
-                            <h3 class="card-title">
-                                Tax
-                            </h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xl-3 col-md-4">
-                    <a href="help-page-comelec.html" class="card bg-primary text-light text-center text-decoration-none h-100 w-100 shadow" role="button">
-                        <i class="fa-solid fa-check-to-slot fa-5x pt-5"></i>
-                        <div class="card-body">
-                            <h3 class="card-title">
-                                Voter Certification
-                            </h3>
-                        </div>
-                    </a>
-                </div>
-                  <h1 class="display-lg-2 display-xl-3 fw-bold text-uppercase py-4 px-3 bg-secondary text-white text-center">Emergency Hotlines</h1>
-                <div class="container">
-                  
-                    <div class="timeline">
-                      <ul>
-                        <li>
-                          <div class="timeline-content">
-                            <h3 class="date">Emergency Hotlines</h3>
-                            <h1>TAGUIG CITY HALL</h1>
-                            <p>555-7800</p>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="timeline-content">
-                            <h3 class="date">Emergency Hotlines</h3>
-                            <h1>TAGUIG FIRE DEP'T</h1>
-                            <p>642-9982 / TAGUIG CITY HALL</p>
-                            <p>8837-0740 / TAGUIG CENTRAL</p>
-                            <p>8837-4496 / TAGUIG FTI</p>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="timeline-content">
-                            <h3 class="date">Emergency Hotlines</h3>
-                            <h1>LAKE & RIVER PATROL</h1>
-                            <p>628-1377</p>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="timeline-content">
-                            <h3 class="date">Emergency Hotlines</h3>
-                            <h1>TAGUIG CITY RESCUE </h1>
-                            <p>0917-5503727</p>
-                          </div>
-                        </li>
-                        <li>
-                            <div class="timeline-content">
-                              <h3 class="date">Emergency Hotlines</h3>
-                              <h1>TAGUIG PNP </h1>
-                              <p>0998-598-7932</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-content">
-                              <h3 class="date">Emergency Hotlines</h3>
-                              <h1>POLICE TAGUIG MOBILE PATROL</h1>
-                              <p>0921-722-1972</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-content">
-                              <h3 class="date">Emergency Hotlines</h3>
-                              <h1>TAGUIG COMMAND CENTER </h1>
-                              <p>789-3200</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-content">
-                              <h3 class="date">Emergency Hotlines</h3>
-                              <h1>SOCIAL WELFARE & DEV'T</h1>
-                              <p>555-7919</p>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="timeline-content">
-                              <h3 class="date">Emergency Hotlines</h3>
-                              <h1>TRAFFIC MANAGEMENT OFFICE </h1>
-                              <p>640-7006</p>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="timeline-content">
-                              <h3 class="date">Emergency Hotlines</h3>
-                              <h1>TAGUIG PATEROS DISTRICT HOSPITAL </h1>
-                              <p>837-8132</p>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="timeline-content">
-                              <h3 class="date">Emergency Hotlines</h3>
-                              <h1>PHIL. RED CROSS </h1>
-                              <p>143</p>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="timeline-content">
-                              <h3 class="date">Emergency Hotlines</h3>
-                              <h1>PHIL. COAST GUARD </h1>
-                              <p>(02)-852-78482</p>
-                            </div>
-                          </li>
-                    </ul>
-                </div>
+          <div class="col-xl-3 col-md-4">
+            <a href="help-page-categories-permit.html"
+              class="card bg-primary text-light text-center text-decoration-none h-100 w-100 shadow" role="button">
+              <i class="fa-solid fa-scroll fa-5x pt-5"></i>
+              <div class="card-body">
+                <h3 class="card-title">
+                  Permits and Licenses
+                </h3>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-3 col-md-4">
+            <a href="help-page-cto.html"
+              class="card bg-primary text-light text-center text-decoration-none h-100 w-100 shadow" role="button">
+              <i class="fa-solid fa-money-bill fa-5x pt-5"></i>
+              <div class="card-body">
+                <h3 class="card-title">
+                  Tax
+                </h3>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-3 col-md-4">
+            <a href="help-page-comelec.html"
+              class="card bg-primary text-light text-center text-decoration-none h-100 w-100 shadow" role="button">
+              <i class="fa-solid fa-check-to-slot fa-5x pt-5"></i>
+              <div class="card-body">
+                <h3 class="card-title">
+                  Voter Certification
+                </h3>
+              </div>
+            </a>
+          </div>
+          <h1 class="display-lg-2 display-xl-3 fw-bold text-uppercase py-4 px-3 bg-secondary text-white text-center">
+            Emergency Hotlines</h1>
+          <div class="container">
+
+            <div class="timeline">
+              <ul>
+                <li>
+                  <div class="timeline-content">
+                    <h3 class="date">Emergency Hotlines</h3>
+                    <h1>TAGUIG CITY HALL</h1>
+                    <p>555-7800</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-content">
+                    <h3 class="date">Emergency Hotlines</h3>
+                    <h1>TAGUIG FIRE DEP'T</h1>
+                    <p>642-9982 / TAGUIG CITY HALL</p>
+                    <p>8837-0740 / TAGUIG CENTRAL</p>
+                    <p>8837-4496 / TAGUIG FTI</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-content">
+                    <h3 class="date">Emergency Hotlines</h3>
+                    <h1>LAKE & RIVER PATROL</h1>
+                    <p>628-1377</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-content">
+                    <h3 class="date">Emergency Hotlines</h3>
+                    <h1>TAGUIG CITY RESCUE </h1>
+                    <p>0917-5503727</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-content">
+                    <h3 class="date">Emergency Hotlines</h3>
+                    <h1>TAGUIG PNP </h1>
+                    <p>0998-598-7932</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-content">
+                    <h3 class="date">Emergency Hotlines</h3>
+                    <h1>POLICE TAGUIG MOBILE PATROL</h1>
+                    <p>0921-722-1972</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-content">
+                    <h3 class="date">Emergency Hotlines</h3>
+                    <h1>TAGUIG COMMAND CENTER </h1>
+                    <p>789-3200</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-content">
+                    <h3 class="date">Emergency Hotlines</h3>
+                    <h1>SOCIAL WELFARE & DEV'T</h1>
+                    <p>555-7919</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-content">
+                    <h3 class="date">Emergency Hotlines</h3>
+                    <h1>TRAFFIC MANAGEMENT OFFICE </h1>
+                    <p>640-7006</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-content">
+                    <h3 class="date">Emergency Hotlines</h3>
+                    <h1>TAGUIG PATEROS DISTRICT HOSPITAL </h1>
+                    <p>837-8132</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-content">
+                    <h3 class="date">Emergency Hotlines</h3>
+                    <h1>PHIL. RED CROSS </h1>
+                    <p>143</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-content">
+                    <h3 class="date">Emergency Hotlines</h3>
+                    <h1>PHIL. COAST GUARD </h1>
+                    <p>(02)-852-78482</p>
+                  </div>
+                </li>
+              </ul>
             </div>
-                   
+          </div>
+
         </div>
-    </div> 
-        
-</section>
-    
-                
-                        
-    <!-- Bootstrap JS Bundle with Popper.js -->
-    </body>
-    </html>
+      </div>
+
+  </section>
+
+
+
+  <!-- Bootstrap JS Bundle with Popper.js -->
 </body>
+
+</html>
+</body>
+
 </html>
