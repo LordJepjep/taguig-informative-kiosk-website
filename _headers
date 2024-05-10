@@ -1,4 +1,8 @@
 /*
-    Cross-Origin-Embedder-Policy: require-corp
     Access-Control-Allow-Origin: *
+    X-Frame-Options: SAMEORIGIN
+    Cross-Origin-Embedder-Policy: require-corp
+    Cross-Origin-Opener-Policy: same-origin
+    Cross-Origin-Resource-Policy: cross-origin
+    Permissions-Policy: cross-origin-isolated=(self)
     Content-Security-Policy: frame-ancestors 'self' *.facebook.com *.internalfb.com *.fbcdn.net;
