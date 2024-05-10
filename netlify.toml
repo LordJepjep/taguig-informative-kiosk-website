@@ -2,7 +2,6 @@
 for = "/*"
 [headers.values]
 Access-Control-Allow-Origin = "*"
-X-Frame-Options = "SAMEORIGIN"
 Cross-Origin-Embedder-Policy = "require-corp"
 Cross-Origin-Opener-Policy = "same-origin"
 Cross-Origin-Resource-Policy = "cross-origin"
