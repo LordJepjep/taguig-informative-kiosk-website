@@ -1,6 +1,7 @@
 {
   "headers": [
     {
+      
       "source": "/(.*)", // Apply CORS to all routes
       "headers": [
         {
